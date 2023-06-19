@@ -1,8 +1,72 @@
 import { Link } from "react-router-dom";
 import './Home.css'
+import { useState } from "react";
+import axios from "axios";
+import { BiWinkTongue } from 'react-icons/bi'
+import { BiDizzy } from 'react-icons/bi'
 
 
 function Home() {
+
+
+
+    const [nome, setNome] = useState()
+    const [nome2, setNome2] = useState()
+
+    const [empresa, setEmpresa] = useState()
+    const [empresa2, setEmpresa2] = useState()
+
+    const [telefone, setTelefone] = useState()
+    const [telefone2, setTelefone2] = useState()
+
+    const [email, setEmail] = useState()
+    const [email2, setEmail2] = useState()
+
+    const [mensagem, setMensagem] = useState()
+    const [mensagem2, setMensagem2] = useState()
+
+    const [checkbox, setCheckbox] = useState()
+    const [checkbox2, setCheckbox2] = useState()
+
+    const [tipo_suporte, setTipo_suporte] = useState()
+    const [tipo_suporte2, setTipo_suporte2] = useState()
+
+    const [error, setError] = useState(false)
+
+
+    function handleClick(e) {
+        e.preventDefault()
+
+
+
+
+        axios.post('http://localhost:5000/fale_conosco', {
+            nome,
+            empresa,
+            telefone,
+            email,
+            mensagem,
+            checkbox,
+            tipo_suporte
+
+        })
+            .then(() => {
+                setNome2(nome)
+                setEmpresa2(empresa)
+                setTelefone2(telefone)
+                setEmail2(email)
+                setMensagem2(mensagem)
+                setCheckbox2(checkbox)
+                setTipo_suporte2(tipo_suporte)
+                    
+                    if(nome && empresa && telefone && email && mensagem && checkbox && tipo_suporte) {
+                        setTimeout(() => window.location.reload(),2000);
+                        console.log('Enviado com sucesso!!')
+                    }    
+            })
+
+
+    }
 
     return (
 
@@ -56,7 +120,7 @@ function Home() {
 
                 <div className="container cardContainer d-flex justify-content-center">
                     <div className="row d-flex justify-content-center cardContainer2 ">
-                        <div className="card" style={{width:"18rem"}}>
+                        <div className="card" style={{ width: "18rem" }}>
                             <img src="./img/index/globe-solid.svg" className="card-img-top saibaMais-img" alt="..." height="150px" />
                             <div className="card-body">
                                 <h5 className="card-title">Internet</h5>
@@ -64,7 +128,7 @@ function Home() {
                                 <a href="#" className="btn button-saibaMais">Saiba mais</a>
                             </div>
                         </div>
-                        <div className="card" style={{width:"18rem"}}>
+                        <div className="card" style={{ width: "18rem" }}>
                             <img src="./img/index/telefonia.svg" className="card-img-top saibaMais-img" alt="..." height="150px" />
                             <div className="card-body">
                                 <h5 className="card-title">Telefonia</h5>
@@ -72,7 +136,7 @@ function Home() {
                                 <a href="#" className="btn button-saibaMais">Saiba mais</a>
                             </div>
                         </div>
-                        <div className="card" style={{width:"18rem"}}>
+                        <div className="card" style={{ width: "18rem" }}>
                             <img src="./img/index/mobile-solid.svg" className="card-img-top saibaMais-img" alt="..." height="150px" />
                             <div className="card-body">
                                 <h5 className="card-title">Mobilidade</h5>
@@ -90,32 +154,32 @@ function Home() {
                             <div className="row ">
                                 <div className="col container-div-list-home">
                                     <div className="">
-                                    <img src="./img/index/Planos-de-celular-empresarial-8.png" width={'500px'} className="img-thumbnail"
-                                        alt="..." />
-                                </div>
-                                <div className="col container-lista">
-                                    <ul className="list-group list-group-flush itemLista2 ">
-                                        <li className="list-group-item itemLista"><img style={{float:"left"}}
-                                            src="./img/index/icone-planos-customizaveis-1-2048x2048.png"
-                                            width="40px" alt=""  className="imagemLista1" /><span className="span-lista-home">PLANOS
-                                            CUSTOMIZÁVEIS</span></li>
-                                        <li className="list-group-item itemLista"><img style={{float:"left"}}
-                                            src="./img/index/icone-traga-seu-celular-e-aparelho-3-2048x2048.png"
-                                            width="40px" alt=""  className="imagemLista2" /><span className="span-lista-home">TRAGA SEU
-                                            NÚMERO E APARELHO</span></li>
-                                        <li className="list-group-item itemLista"><img style={{float:"left"}}
-                                            src="img/index/icone-receba-seu-chip-na-sua-empresa-2.png"
-                                            width="40px" alt=""  className="imagemLista3" /><span className="span-lista-home">RECEBA SEU
-                                            CHIP NA SUA EMPRESA</span></li>
-                                        <li className="list-group-item itemLista"><img style={{float:"left"}}
-                                            src="img/index/icone-maior-rede-movel-do-brasil-2-2048x2048.png"
-                                            width="40px" alt=""  className="imagemLista4" /><span className="span-lista-home">MAIOR REDE
-                                            MÓVEL DO BRASIL</span></li>
-                                        <li className="list-group-item itemLista"><img style={{float:"left"}}
-                                            src="img/index/icone-atendimento-diferenciado-1.png" width="40px"
-                                            alt="" className="imagemLista5" /><span className="span-lista-home">ATENDIMENTO DIFERENCIADO</span></li>
-                                    </ul>
-                                </div>
+                                        <img src="./img/index/Planos-de-celular-empresarial-8.png" width={'500px'} className="img-thumbnail"
+                                            alt="..." />
+                                    </div>
+                                    <div className="col container-lista">
+                                        <ul className="list-group list-group-flush itemLista2 ">
+                                            <li className="list-group-item itemLista"><img style={{ float: "left" }}
+                                                src="./img/index/icone-planos-customizaveis-1-2048x2048.png"
+                                                width="40px" alt="" className="imagemLista1" /><span className="span-lista-home">PLANOS
+                                                    CUSTOMIZÁVEIS</span></li>
+                                            <li className="list-group-item itemLista"><img style={{ float: "left" }}
+                                                src="./img/index/icone-traga-seu-celular-e-aparelho-3-2048x2048.png"
+                                                width="40px" alt="" className="imagemLista2" /><span className="span-lista-home">TRAGA SEU
+                                                    NÚMERO E APARELHO</span></li>
+                                            <li className="list-group-item itemLista"><img style={{ float: "left" }}
+                                                src="img/index/icone-receba-seu-chip-na-sua-empresa-2.png"
+                                                width="40px" alt="" className="imagemLista3" /><span className="span-lista-home">RECEBA SEU
+                                                    CHIP NA SUA EMPRESA</span></li>
+                                            <li className="list-group-item itemLista"><img style={{ float: "left" }}
+                                                src="img/index/icone-maior-rede-movel-do-brasil-2-2048x2048.png"
+                                                width="40px" alt="" className="imagemLista4" /><span className="span-lista-home">MAIOR REDE
+                                                    MÓVEL DO BRASIL</span></li>
+                                            <li className="list-group-item itemLista"><img style={{ float: "left" }}
+                                                src="img/index/icone-atendimento-diferenciado-1.png" width="40px"
+                                                alt="" className="imagemLista5" /><span className="span-lista-home">ATENDIMENTO DIFERENCIADO</span></li>
+                                        </ul>
+                                    </div>
                                 </div>
 
 
@@ -288,7 +352,7 @@ function Home() {
                                                                     <div className="card ">
                                                                         <img className="img-fluid container-clientes" alt="100%x280"
                                                                             src="img/clientes/czechTeam.png"
-                                                                            width="200px" height="200px" style={{marginLeft:"12px"}} />
+                                                                            width="200px" height="200px" style={{ marginLeft: "12px" }} />
                                                                         <div className="card-body">
                                                                             <h4 className="card-title titulo-card">Czech Team</h4>
                                                                             <p className="card-text">"Equipe e visitantes da casa da
@@ -310,7 +374,7 @@ function Home() {
                                                                     <div className="card">
                                                                         <img className="img-fluid " alt="100%x280"
                                                                             src="img/clientes/avmedia.png"
-                                                                            width="157px" style={{marginLeft:"15px"}}  />
+                                                                            width="157px" style={{ marginLeft: "15px" }} />
                                                                         <div className="card-body container-cards-home">
                                                                             <h4 className="card-title titulo-card">AVMEDIA</h4>
                                                                             <p className="card-text">"Gostariamos de agradecer a
@@ -328,7 +392,7 @@ function Home() {
                                                                     <div className="card">
                                                                         <img className="img-fluid container-clientes" alt="100%x280"
                                                                             src="img/clientes/progolf.png"
-                                                                            width="200px" height="200px" style={{marginLeft:"12px"}} />
+                                                                            width="200px" height="200px" style={{ marginLeft: "12px" }} />
                                                                         <div className="card-body container-cards-home">
                                                                             <h4 className="card-title titulo-card">Progolf</h4>
                                                                             <p className="card-text">Gostaríamos de agradecer a
@@ -358,7 +422,7 @@ function Home() {
                                                                     <div className="card">
                                                                         <img className="img-fluid container-clientes" alt="100%x280"
                                                                             src="img/clientes/sls.png"
-                                                                            width="160px" style={{marginLeft:"19px",marginTop:"15px"}} />
+                                                                            width="160px" style={{ marginLeft: "19px", marginTop: "15px" }} />
                                                                         <div className="card-body container-cards-home">
                                                                             <h4 className="card-title titulo-card">SLS <br></br><br></br></h4>
                                                                             <p className="card-text">" Fantástico trabalho da equipe
@@ -377,7 +441,7 @@ function Home() {
                                                                     <div className="card">
                                                                         <img className="img-fluid " alt="100%x280"
                                                                             src="./img/clientes/rock-in-rio.png"
-                                                                            width="160px" style={{marginLeft:"15px",marginTop:"15px"}}  />
+                                                                            width="160px" style={{ marginLeft: "15px", marginTop: "15px" }} />
                                                                         <div className="card-body container-cards-home ">
                                                                             <h4 className="card-title titulo-card">Rock in Rio</h4>
                                                                             <p className="card-text ">“É com o coração transbordando de
@@ -403,9 +467,9 @@ function Home() {
                                                                 </div>
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid "  alt="100%x280"
+                                                                        <img className="img-fluid " alt="100%x280"
                                                                             src="img/clientes/maratona.jpg"
-                                                                            width="170px" height="200px" style={{marginLeft:"19px"}} />
+                                                                            width="170px" height="200px" style={{ marginLeft: "19px" }} />
                                                                         <div className="card-body container-cards-home">
                                                                             <h4 className="card-title titulo-card">Rio Maratona</h4>
                                                                             <p className="card-text">"A operação foi um sucesso, a <br></br>
@@ -439,7 +503,7 @@ function Home() {
                                 </section>
 
 
-                                <form className="container d-flex justify-content-center gap-5">
+                                <form onSubmit={handleClick} className="container d-flex justify-content-center gap-5">
 
 
 
@@ -461,13 +525,19 @@ function Home() {
                                         <div className="row mb-4">
                                             <div className="col">
                                                 <div className="form">
-                                                    <input type="text" pattern="[A-Z a-z]+" minLength="8" maxLength="25" id="nome" name="nome" className="form-control input-user" />
+                                                    <input type="text" pattern="[A-Z a-z]+" minLength="8" maxLength="25" id="nome" name="nome"
+                                                        className="form-control input-user" required onChange={((e) => {
+                                                            setNome(e.target.value)
+                                                        })} />
                                                     <label className="form-label p-home" htmlFor="nome">Nome</label>
                                                 </div>
                                             </div>
 
                                             <div className="form ">
-                                                <input type="text" pattern="[A-Z a-z]+" minLength="8" maxLength="25" id="empresa" name="empresa" className="form-control input-user" />
+                                                <input type="text" pattern="[A-Z a-z]+" minLength="8" maxLength="25" id="empresa"
+                                                    name="empresa" className="form-control input-user" required onChange={((e) => {
+                                                        setEmpresa(e.target.value)
+                                                    })} />
                                                 <label className="form-label p-home" htmlFor="empresa">Empresa</label>
 
                                             </div>
@@ -475,7 +545,10 @@ function Home() {
 
 
                                         <div className="form">
-                                            <input type="tel" pattern="[0-9]{2}[0-9]{2}[0-9]{4}[0-9]{5}" placeholder="(+xx) xx-xxxx-xxxxx" id="telefone" name="telefone" className="form-control input-user" />
+                                            <input type="tel" pattern="[0-9]{2}[0-9]{2}[0-9]{4}[0-9]{5}" maxLength={13} placeholder="(+xx) xx-xxxx-xxxxx"
+                                                id="telefone" name="telefone" className="form-control input-user" required onChange={((e) => {
+                                                    setTelefone(e.target.value)
+                                                })} />
                                             <label className="form-label p-home" htmlFor="telefone">Telefone</label>
                                         </div>
 
@@ -484,7 +557,10 @@ function Home() {
 
 
                                         <div className="form">
-                                            <input type="email" pattern=".+@gmail\.com" id="email" name="email" className="form-control input-user" placeholder="xxxx@gmail.com" />
+                                            <input type="email" pattern=".+@gmail\.com" id="email" name="email"
+                                                className="form-control input-user" required placeholder="xxxx@gmail.com" onChange={((e) => {
+                                                    setEmail(e.target.value)
+                                                })} />
                                             <label className="form-label p-home" htmlFor="email">Email</label>
                                         </div>
 
@@ -493,7 +569,10 @@ function Home() {
 
 
                                         <div className="form">
-                                            <textarea className="form-control input-user" id="mensagem" name="mensagem" rows="4"></textarea>
+                                            <textarea className="form-control input-user"
+                                                id="mensagem" name="mensagem" required rows="4" onChange={((e) => {
+                                                    setMensagem(e.target.value)
+                                                })}></textarea>
                                             <label className="form-label p-home" htmlFor="mensagem">Mensagem</label>
                                         </div>
 
@@ -506,12 +585,18 @@ function Home() {
 
                                             <input className="form-check-input check-user" type="checkbox" value="checked"
                                                 id="checkbox"
-                                                name="checkbox" style={{marginTop:"12px"}} />
-                                            <label className="form-check-label p-home" style={{marginTop:"7px"}} htmlFor="checkbox">Confirmar </label>
+                                                name="checkbox" style={{ marginTop: "12px" }} required onChange={((e) => {
+                                                    setCheckbox(e.target.value)
+                                                })} />
+                                            <label className="form-check-label p-home" style={{ marginTop: "7px" }} htmlFor="checkbox">Confirmar </label>
 
                                             <div className="mb-3">
-                                                <select defaultValue={'DEFAULT'}  className="form-select input-user" id="tipo_suporte" name="tipo_suporte" required aria-label="Default select example" style={{marginLeft:"20px"}}>
-                                                    <option selected>-- Seleciona uma opção --</option>
+                                                <select  className="form-select input-user" id="tipo_suporte"
+                                                    name="tipo_suporte" required aria-label="Default select example"
+                                                    style={{ marginLeft: "20px" }} onChange={((e) => {
+                                                        setTipo_suporte(e.target.value)
+                                                    })}>
+                                                    <option value="">-- Seleciona uma opção --</option>
 
 
 
@@ -529,70 +614,83 @@ function Home() {
 
 
 
-                                        <button  className="btn button-saibaMais2 btn-block mb-4">Enviar</button>
+                                        <button className="btn button-saibaMais2 btn-block mb-4">Enviar</button>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                        {nome2 && empresa2 && telefone2 && email2 && mensagem2 && checkbox2 && tipo_suporte2 && (
+                                           
+                                            < div className="alert alert-success success-home" role="alert">
+                                        <BiWinkTongue className="icon-home"></BiWinkTongue> Logado com sucesso!!
                                     </div>
+                                         
+
+                                        )}
+
+                                   
 
 
 
-                                    <div className="containerContato2">
-                                        <h1 className="tituloContato">Escritório</h1>
-                                        <h4 className="p-home">Brasil</h4>
-                                        <p className="p-home">
-                                            Centro empresarial Mario Henrique Simonsen <br></br>
-                                            Av. das Américas, 3434 | Bloco 1, Sala 505 <br></br>
-                                            Barra da Tijuca | Rio de Janeiro, RJ</p>
-                                        <h4 className="p-home">Estados Unidos</h4>
-                                        <p className="p-home">
-                                            848 Brickell Av – Suite 1235 | Miami, Florida, USA – 33131</p>
-                                        <h4 className="p-home">Portugal</h4>
-                                        <p className="p-home">
-                                            Avenida da Liberdade nº 245, 4º piso, sala 402 | Lisboa, Portugal 1250-143</p>
-                                        <h4 className="p-home">Inglaterra</h4>
-                                        <p className="p-home">
-                                            8 Devonshire Squae, Londom EC2M 4YJ</p>
-                                        <h4 className="p-home">Contatos</h4>
-                                        <p className="p-home">
-                                            Email: suporte@telecall.com <br></br>
-                                            Tel: (21) 3030-1010 <br></br>
-                                            Wpp: (21)93618-0100</p>
-                                        <h4 className="p-home">Carreiras</h4>
-                                        <p className="p-home">
-                                            <Link className="link-home" to="/home/carreiras">Clique aqui</Link> para verificar as vagas disponíveis.
-                                        </p>
-                                    </div>
 
-                                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                             </div>
-                        </div>
+
+
+
+                            <div className="containerContato2">
+                                <h1 className="tituloContato">Escritório</h1>
+                                <h4 className="p-home">Brasil</h4>
+                                <p className="p-home">
+                                    Centro empresarial Mario Henrique Simonsen <br></br>
+                                    Av. das Américas, 3434 | Bloco 1, Sala 505 <br></br>
+                                    Barra da Tijuca | Rio de Janeiro, RJ</p>
+                                <h4 className="p-home">Estados Unidos</h4>
+                                <p className="p-home">
+                                    848 Brickell Av – Suite 1235 | Miami, Florida, USA – 33131</p>
+                                <h4 className="p-home">Portugal</h4>
+                                <p className="p-home">
+                                    Avenida da Liberdade nº 245, 4º piso, sala 402 | Lisboa, Portugal 1250-143</p>
+                                <h4 className="p-home">Inglaterra</h4>
+                                <p className="p-home">
+                                    8 Devonshire Squae, Londom EC2M 4YJ</p>
+                                <h4 className="p-home">Contatos</h4>
+                                <p className="p-home">
+                                    Email: suporte@telecall.com <br></br>
+                                    Tel: (21) 3030-1010 <br></br>
+                                    Wpp: (21)93618-0100</p>
+                                <h4 className="p-home">Carreiras</h4>
+                                <p className="p-home">
+                                    <Link className="link-home" to="/home/carreiras">Clique aqui</Link> para verificar as vagas disponíveis.
+                                </p>
+                            </div>
+
+
+                        </form>
+
                     </div>
                 </div>
-            </main>
+            </div>
+        </div >
+            </main >
         </>
     )
 }

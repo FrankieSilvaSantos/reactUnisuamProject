@@ -318,3 +318,19 @@ border-radius: 20px;
 .saibaMais-img{
     margin-top: 2em;
 }
+
+.icon-home {
+    font-size: 20px;
+    margin-bottom: 4px;
+
+}
+
+.error-home {
+
+    margin-top: 1em
+}
+
+.success-home {
+
+    margin-top: 1em;
+}
