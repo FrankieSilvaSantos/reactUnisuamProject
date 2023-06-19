@@ -474,7 +474,7 @@ function Home() {
 
 
                                         <div className="form">
-                                            <input type="tel" pattern="[0-9]{2}[0-9]{2}[0-9]{4}[0-9]{4}" placeholder="(+xx) xx-xxxx-xxxxx" id="telefone" name="telefone" class="form-control input-user" />
+                                            <input type="tel" pattern="[0-9]{2}[0-9]{2}[0-9]{4}[0-9]{5}" placeholder="(+xx) xx-xxxx-xxxxx" id="telefone" name="telefone" class="form-control input-user" />
                                             <label className="form-label p-home" htmlFor="telefone">Telefone</label>
                                         </div>
 
