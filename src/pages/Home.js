@@ -620,7 +620,7 @@ function Home() {
                                         {nome2 && empresa2 && telefone2 && email2 && mensagem2 && checkbox2 && tipo_suporte2 && (
                                            
                                             < div className="alert alert-success success-home" role="alert">
-                                        <BiWinkTongue className="icon-home"></BiWinkTongue> Logado com sucesso!!
+                                        <BiWinkTongue className="icon-home"></BiWinkTongue> Informações enviadas com sucesso!!
                                     </div>
                                          
 
