@@ -66,14 +66,14 @@ function Home() {
                         </div>
                         <div className="card" style={{width:"18rem"}}>
                             <img src="./img/index/telefonia.svg" className="card-img-top saibaMais-img" alt="..." height="150px" />
-                            <div class="card-body">
-                                <h5 class="card-title">Telefonia</h5>
-                                <p class="card-text">Solução inteligente de PABX IP na núvem para sua telefonia fixa. <br></br><br></br></p>
+                            <div className="card-body">
+                                <h5 className="card-title">Telefonia</h5>
+                                <p className="card-text">Solução inteligente de PABX IP na núvem para sua telefonia fixa. <br></br><br></br></p>
                                 <a href="#" className="btn button-saibaMais">Saiba mais</a>
                             </div>
                         </div>
-                        <div class="card" style={{width:"18rem"}}>
-                            <img src="./img/index/mobile-solid.svg" class="card-img-top saibaMais-img" alt="..." height="150px" />
+                        <div className="card" style={{width:"18rem"}}>
+                            <img src="./img/index/mobile-solid.svg" className="card-img-top saibaMais-img" alt="..." height="150px" />
                             <div className="card-body">
                                 <h5 className="card-title">Mobilidade</h5>
                                 <p className="card-text">Monte planos de celular personalizados para a sua empresa e pague apenas pelo
@@ -86,36 +86,37 @@ function Home() {
 
 
                         <h1 className="tituloPlanosMobilidade">Conheça nossos planos de mobilidade</h1>
-                        <div className="container d-flex align-items-center">
-                            <div className="row">
-                                <div className="col">
-                                    <img src="./img/index/Planos-de-celular-empresarial-8.png" className="img-thumbnail"
+                        <div className="container container-div-list-home">
+                            <div className="row ">
+                                <div className="col container-div-list-home">
+                                    <div className="">
+                                    <img src="./img/index/Planos-de-celular-empresarial-8.png" width={'500px'} className="img-thumbnail"
                                         alt="..." />
                                 </div>
                                 <div className="col container-lista">
                                     <ul className="list-group list-group-flush itemLista2 ">
                                         <li className="list-group-item itemLista"><img style={{float:"left"}}
                                             src="./img/index/icone-planos-customizaveis-1-2048x2048.png"
-                                            width="40px" alt="" srcset="" className="imagemLista1" /><span className="span-lista-home">PLANOS
+                                            width="40px" alt=""  className="imagemLista1" /><span className="span-lista-home">PLANOS
                                             CUSTOMIZÁVEIS</span></li>
                                         <li className="list-group-item itemLista"><img style={{float:"left"}}
                                             src="./img/index/icone-traga-seu-celular-e-aparelho-3-2048x2048.png"
-                                            width="40px" alt="" srcset="" className="imagemLista2" /><span className="span-lista-home">TRAGA SEU
+                                            width="40px" alt=""  className="imagemLista2" /><span className="span-lista-home">TRAGA SEU
                                             NÚMERO E APARELHO</span></li>
-                                        <li class="list-group-item itemLista"><img style={{float:"left"}}
+                                        <li className="list-group-item itemLista"><img style={{float:"left"}}
                                             src="img/index/icone-receba-seu-chip-na-sua-empresa-2.png"
-                                            width="40px" alt="" srcset="" className="imagemLista3" /><span className="span-lista-home">RECEBA SEU
+                                            width="40px" alt=""  className="imagemLista3" /><span className="span-lista-home">RECEBA SEU
                                             CHIP NA SUA EMPRESA</span></li>
-                                        <li class="list-group-item itemLista"><img style={{float:"left"}}
+                                        <li className="list-group-item itemLista"><img style={{float:"left"}}
                                             src="img/index/icone-maior-rede-movel-do-brasil-2-2048x2048.png"
-                                            width="40px" alt="" srcset="" className="imagemLista4" /><span className="span-lista-home">MAIOR REDE
+                                            width="40px" alt=""  className="imagemLista4" /><span className="span-lista-home">MAIOR REDE
                                             MÓVEL DO BRASIL</span></li>
                                         <li className="list-group-item itemLista"><img style={{float:"left"}}
                                             src="img/index/icone-atendimento-diferenciado-1.png" width="40px"
-                                            alt="" class="imagemLista5" /><span className="span-lista-home">ATENDIMENTO DIFERENCIADO</span></li>
+                                            alt="" className="imagemLista5" /><span className="span-lista-home">ATENDIMENTO DIFERENCIADO</span></li>
                                     </ul>
                                 </div>
-
+                                </div>
 
 
                                 <section className="pt-5 pb-5">
@@ -240,7 +241,7 @@ function Home() {
 
                                 <div className="container">
                                     <div className="card text-bg-dark ">
-                                        <img src="img/index/mapa-fibra-rj.png" class="card-img" alt="..." />
+                                        <img src="img/index/mapa-fibra-rj.png" className="card-img" alt="..." />
 
                                         <div className="card-img-overlay containerMapaCard   ">
                                             <div className="containerMapaCard2">
@@ -266,7 +267,7 @@ function Home() {
                                                     Os Que Acreditam Nos Nossos Serviços </h3>
                                             </div>
                                             <div className="col-6 text-right ">
-                                                <a class="btn button-saibaMais button-card-positioning22 mb-3 mr-1" role="button" data-bs-slide="prev"
+                                                <a className="btn button-saibaMais button-card-positioning22 mb-3 mr-1" role="button" data-bs-slide="prev"
                                                     href="#carouselExampleIndicators3">
                                                     <i className="fa fa-arrow-left"></i>
                                                 </a>
@@ -289,7 +290,7 @@ function Home() {
                                                                             src="img/clientes/czechTeam.png"
                                                                             width="200px" height="200px" style={{marginLeft:"12px"}} />
                                                                         <div className="card-body">
-                                                                            <h4 class="card-title titulo-card">Czech Team</h4>
+                                                                            <h4 className="card-title titulo-card">Czech Team</h4>
                                                                             <p className="card-text">"Equipe e visitantes da casa da
                                                                                 <br></br>
                                                                                 República Tcheca durante os Jogos <br></br> Olímpicos Rio
@@ -299,7 +300,7 @@ function Home() {
                                                                                 agradecemos toda a ajuda"</p>
                                                                             <span className="clientesNomeSpan">Blanka Konečná
                                                                                 <br></br></span>
-                                                                            <span class="clientesTextoSpan">Project manager</span>
+                                                                            <span className="clientesTextoSpan">Project manager</span>
 
                                                                         </div>
 
@@ -317,8 +318,8 @@ function Home() {
                                                                                 toda a ajuda nos serviços prestados. Tudo <br></br>
                                                                                 funcionou bem e os ténicos foram <br></br> muito
                                                                                 prestativos"</p>
-                                                                            <span class="clientesNomeSpan">Michal Matko <br></br></span>
-                                                                            <span class="clientesTextoSpan">AVMEDIA, a.s.</span>
+                                                                            <span className="clientesNomeSpan">Michal Matko <br></br></span>
+                                                                            <span className="clientesTextoSpan">AVMEDIA, a.s.</span>
 
                                                                         </div>
                                                                     </div>
@@ -372,8 +373,8 @@ function Home() {
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-4 mb-3">
-                                                                    <div class="card">
+                                                                <div className="col-md-4 mb-3">
+                                                                    <div className="card">
                                                                         <img className="img-fluid " alt="100%x280"
                                                                             src="./img/clientes/rock-in-rio.png"
                                                                             width="160px" style={{marginLeft:"15px",marginTop:"15px"}}  />
@@ -457,16 +458,16 @@ function Home() {
 
 
                                         </div>
-                                        <div class="row mb-4">
-                                            <div class="col">
-                                                <div class="form">
-                                                    <input type="text" pattern="[A-Z a-z]+" minlength="8" maxlength="25" id="nome" name="nome" className="form-control input-user" />
+                                        <div className="row mb-4">
+                                            <div className="col">
+                                                <div className="form">
+                                                    <input type="text" pattern="[A-Z a-z]+" minLength="8" maxLength="25" id="nome" name="nome" className="form-control input-user" />
                                                     <label className="form-label p-home" htmlFor="nome">Nome</label>
                                                 </div>
                                             </div>
 
                                             <div className="form ">
-                                                <input type="text" pattern="[A-Z a-z]+" minlength="8" maxlength="25" id="empresa" name="empresa" class="form-control input-user" />
+                                                <input type="text" pattern="[A-Z a-z]+" minLength="8" maxLength="25" id="empresa" name="empresa" className="form-control input-user" />
                                                 <label className="form-label p-home" htmlFor="empresa">Empresa</label>
 
                                             </div>
@@ -474,7 +475,7 @@ function Home() {
 
 
                                         <div className="form">
-                                            <input type="tel" pattern="[0-9]{2}[0-9]{2}[0-9]{4}[0-9]{5}" placeholder="(+xx) xx-xxxx-xxxxx" id="telefone" name="telefone" class="form-control input-user" />
+                                            <input type="tel" pattern="[0-9]{2}[0-9]{2}[0-9]{4}[0-9]{5}" placeholder="(+xx) xx-xxxx-xxxxx" id="telefone" name="telefone" className="form-control input-user" />
                                             <label className="form-label p-home" htmlFor="telefone">Telefone</label>
                                         </div>
 
@@ -501,15 +502,15 @@ function Home() {
 
 
 
-                                        <div class="form-check d-flex justify-content-lg-start mb-4">
+                                        <div className="form-check d-flex justify-content-lg-start mb-4">
 
-                                            <input class="form-check-input check-user" type="checkbox" value="checked"
+                                            <input className="form-check-input check-user" type="checkbox" value="checked"
                                                 id="checkbox"
                                                 name="checkbox" style={{marginTop:"12px"}} />
                                             <label className="form-check-label p-home" style={{marginTop:"7px"}} htmlFor="checkbox">Confirmar </label>
 
                                             <div className="mb-3">
-                                                <select className="form-select input-user" id="tipo_suporte" name="tipo_suporte" required aria-label="Default select example" style={{marginLeft:"20px"}}>
+                                                <select defaultValue={'DEFAULT'}  className="form-select input-user" id="tipo_suporte" name="tipo_suporte" required aria-label="Default select example" style={{marginLeft:"20px"}}>
                                                     <option selected>-- Seleciona uma opção --</option>
 
 

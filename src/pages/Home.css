@@ -34,25 +34,26 @@
 
 .itemLista {
     text-align: left;
-    height: 10em;
+    width: auto ;
     padding-bottom: 0.8em;
-    
 }
 
 .span-lista-home {
     position: relative;
     top: 0.5em;
     margin-left: 1em;
-    
 }
 
 .itemLista2 {
-   height: 3em;
+ 
    border-radius: 20px;
-   
+
+   width: 23em;
 }
 .container-lista {
-    height: 10em;
+   
+    width: auto;
+
 }
 
 .container-cards-evento {
@@ -69,6 +70,14 @@
 
 .p-card {
     font-size: 3px;
+}
+
+.container-div-list-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    margin-left: 4em;
 }
 
 
