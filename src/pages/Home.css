@@ -1,0 +1,274 @@
+.botaoCliente {
+    padding-right: 20px;
+    text-decoration: inherit;
+    color: inherit;
+    outline: 0;
+   
+}
+
+
+
+.menuPrimeiro{
+    background-color: black;
+}
+
+.cardContainer {
+    margin-top: 30px;  
+    size: 100vh;
+    box-sizing: border-box;
+    
+}
+
+.cardContainer2 {
+    display: flex;
+    gap: 30px;
+}
+
+.tituloPlanosMobilidade {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(196, 57, 184);
+}
+
+.itemLista {
+    text-align: left;
+}
+
+.tituloEventos {
+    font-weight: 600;
+    color: rgb(196, 57, 184);
+}
+
+.containerMapaCard {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    size: 100vh;
+}
+
+.containerMapaCard2 {
+    border: solid 2px rgb(39, 99, 168) ;
+    background-color: #fff;
+
+}
+
+.tituloMapaCard {
+    font-weight: 600;
+    color: #c439b8;
+    margin: 20px;
+}
+
+.tituloClientes {
+    font-weight: 600;
+    color: rgb(255, 0, 234);
+    margin: 20px;
+}
+
+.tituloClientes2 {
+    font-weight: 600;
+    color: rgb(243, 21, 225);
+    margin: 20px;
+    font-weight: bold;
+}
+
+.textoMapaCard {
+    margin: 20px;
+}
+
+.botaoMapaCard {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.tituloContato {
+    font-weight: 600;
+    color: rgb(255, 11, 235);
+    margin: 20px;
+    font-weight: bold;
+}
+
+.p-home {
+    color: white;
+}
+
+.containerContato2 {
+    margin-left: 20px;
+}
+
+.link-user {
+
+    color: white;
+    text-decoration: none;
+}
+
+.clientesNomeSpan {
+
+    color: rgb(243, 9, 212);
+    
+ 
+}
+
+.clientesTextoSpan {
+    color: rgb(243, 9, 212);
+}
+
+.titulo-card {
+    color: rgb(243, 9, 212)
+
+}
+
+.anchorFooter {
+    color: white;
+    text-decoration: none;
+}
+
+.tituloFooter {
+    color: white;
+}
+
+.check-user {
+border: none !important;
+outline: none !important;
+box-shadow: none !important;
+border-radius: 20px;
+}
+
+.check-user:active,.check-user:focus, .check-user:visited, .check-user:checked {
+    background-color: rgb(243, 9, 212) !important;
+    color: rgb(243, 9, 212) !important;
+    outline:2px solid rgb(243, 9, 212) !important;
+    border: 2px solid rgb(243, 9, 212) !important;
+   
+
+}
+
+/* .containerNav {
+    display: flex;
+    justify-content: end;
+    
+} */
+
+
+
+
+
+
+
+.navPositioning {
+    display: flex;
+    justify-content: end;
+}
+
+.msgBad {
+    background-color: #f89499;
+    color: #970808;
+    border: 1px solid #ffa7a7;
+    border-radius: 2px;
+   font-weight: bold;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+
+    
+}
+
+.msgGood {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    border-radius: 2px;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.button-saibaMais {
+
+    background-color:rgb(243, 9, 212) !important;
+    color: white;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.button-saibaMais:hover, .button-saibaMais:active,.button-saibaMais:focus, .button-saibaMais:visited {
+    border: 3px solid white !important;
+    box-shadow: 10px 10px 10px rgb(243, 9, 212) !important;
+    outline: none !important;
+    color: white;
+
+}
+
+.button-saibaMais2 {
+
+    background-color:rgb(122, 11, 108) !important;
+    color: white;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.button-saibaMais2:hover, .button-saibaMais2:active,.button-saibaMais2:focus, .button-saibaMais2:visited {
+    border: 3px solid white !important;
+    box-shadow: 10px 10px 10px rgb(129, 5, 113) !important;
+    outline: none !important;
+    color: white;
+
+}
+
+.button-card-positioning {
+
+    position: relative;
+    right: 1em;
+  
+    
+}
+
+.button-card-positioning2 {
+
+    position: relative;
+    right: 20px;
+    top:2em;
+    
+}
+
+.button-card-positioning22 {
+
+    position: relative;
+    right: 2em;
+    top:2em
+    
+}
+
+.button-card-positioning2 {
+    position: relative;
+    top:2em;
+    
+}
+
+.button-saibaMais-positioning {
+
+    margin: 0 0 0.6em 1em;
+}
+
+.link-home {
+
+    color: rgb(243, 9, 212);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-home:hover {
+
+    color: rgb(243, 9, 212);
+    text-decoration: underline;
+ 
+}
+
+.saibaMais-img{
+    margin-top: 2em;
+}

@@ -1,0 +1,86 @@
+.img-user {
+
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 5px 5px black;
+    opacity: 0.4;
+}
+
+.input-user {
+
+    border: none !important;
+    box-shadow: none !important;
+
+
+}
+
+.input-user:focus, .input-user:active {
+
+    border:3px solid rgb(243, 9, 212) !important;
+    box-shadow:19px 10px 10px rgb(196, 57, 184) !important;
+    
+
+}
+
+
+.button-user {
+
+    background-color:rgb(243, 9, 212) !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.button-user:hover, .button-user:active,.button-user:focus, .button-user:visited {
+    border: 3px solid white !important;
+    box-shadow: 10px 10px 10px rgb(243, 9, 212) !important;
+    outline: none !important;
+
+}
+
+.container-user {
+    
+    margin-top: 7em;
+}
+
+.link-user {
+
+    color: white;
+    text-decoration: none;
+}
+
+.link-user:hover {
+
+    color: rgb(243, 9, 212);
+    text-decoration: underline;
+ 
+}
+
+.p-user {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5em;
+    font-size: 30px;
+}
+
+.container-p-user {
+
+    margin-bottom: 2em;
+}
+
+.success-user {
+
+    margin-top: 3em;
+}
+
+.error-user {
+
+    margin-top: 3em
+}
+
+.icon-user {
+    font-size: 20px;
+    margin-bottom: 4px;
+
+}

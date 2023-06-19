@@ -1,0 +1,37 @@
+.titulo-profile {
+
+    font-weight: 600;
+    color: rgb(196, 57, 184);
+    margin: 20px;
+    margin-top: 1em;
+}
+
+.span-profile {
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 9px;
+    border-radius: 20px;
+}
+
+.icon-profile {
+    margin-bottom: 10px;
+}
+
+.button-profile {
+    position: relative;
+    left: 2em;
+    background-color:rgb(243, 9, 212) !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+  
+}
+
+.button-profile:hover, .button-profile:active,.button-profile:focus, .button-profile:visited {
+    border: 3px solid white !important;
+    box-shadow: 10px 10px 10px rgb(243, 9, 212) !important;
+    outline: none !important;
+
+}

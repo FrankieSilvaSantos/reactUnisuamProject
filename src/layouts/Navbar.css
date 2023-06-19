@@ -1,0 +1,39 @@
+.navbar-positioning {
+
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+.logo-navbar {
+    border-radius: 100px;
+
+}
+
+.navbar-style {
+
+    background-color: rgb(196, 57, 184);
+
+    border-bottom:3px solid white;
+
+    
+}
+
+.link-style {
+
+    color: white;
+    
+    font-size: 18px;
+}
+
+.link-style:hover, .link-style:focus {
+
+    color: rgb(243, 9, 212);
+    border-bottom:2px solid rgb(243, 9, 212) ;
+    font-weight: bold;
+
+}
+
+.icon-navbar {
+    margin-bottom: 4px ;
+}

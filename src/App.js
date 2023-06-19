@@ -1,24 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navbar from './layouts/Navbar';
+import Home from './pages/Home';
+import Footer from './layouts/Footer';
+import User from './pages/User';
+import Profile from './pages/Profile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    <>
+    <Router>
+  
+  <Navbar></Navbar>
+
+
+  <Routes>
+  
+   <Route path={`/${localStorage.getItem('user')}`} element={<Home></Home>}></Route>
+
+    <Route path='/footer' element={<Footer></Footer>}></Route>
+
+    <Route path='/user' element={<User></User>}></Route>
+  
+    <Route path={`/profile/${localStorage.getItem('user')}`}element={<Profile></Profile>}></Route>
+   
+  </Routes>
+  <Footer></Footer> 
+  </Router>
+
+
+    </>
+
+
   );
 }
 

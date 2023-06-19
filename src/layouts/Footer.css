@@ -1,0 +1,29 @@
+/* .footer-positioning {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 1em;
+    height: 50px;
+} */
+
+
+.copyright-style {
+    text-decoration: none;
+    color: #fff;
+}
+
+.span-style {
+    color: #fff;
+}
+
+.span-style:hover {
+    text-decoration: underline;
+    color: rgb(243, 9, 212);
+}
+
+.socials-style:hover {
+
+    background-color: rgb(243, 9, 212);
+   
+}
