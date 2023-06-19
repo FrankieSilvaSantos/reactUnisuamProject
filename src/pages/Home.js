@@ -92,27 +92,27 @@ function Home() {
                                     <img src="./img/index/Planos-de-celular-empresarial-8.png" className="img-thumbnail"
                                         alt="..." />
                                 </div>
-                                <div className="col">
-                                    <ul className="list-group list-group-flush itemLista ">
+                                <div className="col container-lista">
+                                    <ul className="list-group list-group-flush itemLista2 ">
                                         <li className="list-group-item itemLista"><img style={{float:"left"}}
                                             src="./img/index/icone-planos-customizaveis-1-2048x2048.png"
-                                            width="40px" alt="" srcset="" className="imagemLista1" />PLANOS
-                                            CUSTOMIZÁVEIS</li>
+                                            width="40px" alt="" srcset="" className="imagemLista1" /><span className="span-lista-home">PLANOS
+                                            CUSTOMIZÁVEIS</span></li>
                                         <li className="list-group-item itemLista"><img style={{float:"left"}}
                                             src="./img/index/icone-traga-seu-celular-e-aparelho-3-2048x2048.png"
-                                            width="40px" alt="" srcset="" className="imagemLista2" />TRAGA SEU
-                                            NÚMERO E APARELHO</li>
+                                            width="40px" alt="" srcset="" className="imagemLista2" /><span className="span-lista-home">TRAGA SEU
+                                            NÚMERO E APARELHO</span></li>
                                         <li class="list-group-item itemLista"><img style={{float:"left"}}
                                             src="img/index/icone-receba-seu-chip-na-sua-empresa-2.png"
-                                            width="40px" alt="" srcset="" className="imagemLista3" />RECEBA SEU
-                                            CHIP NA SUA EMPRESA</li>
+                                            width="40px" alt="" srcset="" className="imagemLista3" /><span className="span-lista-home">RECEBA SEU
+                                            CHIP NA SUA EMPRESA</span></li>
                                         <li class="list-group-item itemLista"><img style={{float:"left"}}
                                             src="img/index/icone-maior-rede-movel-do-brasil-2-2048x2048.png"
-                                            width="40px" alt="" srcset="" className="imagemLista4" />MAIOR REDE
-                                            MÓVEL DO BRASIL</li>
+                                            width="40px" alt="" srcset="" className="imagemLista4" /><span className="span-lista-home">MAIOR REDE
+                                            MÓVEL DO BRASIL</span></li>
                                         <li className="list-group-item itemLista"><img style={{float:"left"}}
                                             src="img/index/icone-atendimento-diferenciado-1.png" width="40px"
-                                            alt="" class="imagemLista5" />ATENDIMENTO DIFERENCIADO</li>
+                                            alt="" class="imagemLista5" /><span className="span-lista-home">ATENDIMENTO DIFERENCIADO</span></li>
                                     </ul>
                                 </div>
 
@@ -124,7 +124,7 @@ function Home() {
                                             <div className="col-6">
                                                 <h3 className="mb-3 tituloEventos">Próximos Eventos </h3>
                                             </div>
-                                            <div className="col-6 text-right">
+                                            <div className="col-6 text-right container-cards-eventos">
                                                 <Link className="btn button-saibaMais button-card-positioning mb-3 mr-1" role="button" data-bs-slide="prev"
                                                     to="#carouselExampleIndicators1">
                                                     <i className="fa fa-arrow-left"></i>
@@ -138,7 +138,7 @@ function Home() {
                                                 <div id="carouselExampleIndicators1" className="carousel slide"
                                                     data-bs-ride="carousel">
 
-                                                    <div className="carousel-inner">
+                                                    <div className="carousel-inner ">
                                                         <div className="carousel-item active">
                                                             <div className="row">
 
@@ -147,7 +147,7 @@ function Home() {
 
 
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid container-cards-evento" alt="100%x280"
                                                                             src="img/cardsImages/Expo-ISP-10-12.05.png" />
                                                                         <div className="card-body">
                                                                             <h4 className="card-title titulo-card">EXPOISP BRASIL OLINDA 2023</h4>
@@ -160,7 +160,7 @@ function Home() {
                                                                 </div>
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid container-cards-evento" alt="100%x280"
                                                                             src="img/cardsImages/Abrint-24-a-26.05.png" />
                                                                         <div className="card-body">
                                                                             <h4 className="card-title titulo-card">Abrint Encontro Nacional 2023
@@ -172,7 +172,7 @@ function Home() {
                                                                 </div>
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid container-cards-evento" alt="100%x280"
                                                                             src="img/cardsImages/ITW-14-a-17.05.png" />
                                                                         <div className="card-body">
                                                                             <h4 className="card-title titulo-card">ITW International Telecoms Week
@@ -191,7 +191,7 @@ function Home() {
 
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid container-cards-evento" alt="100%x280"
                                                                             src="img/cardsImages/gccm.png" />
                                                                         <div className="card-body">
                                                                             <h4 className="card-title titulo-card">GCCM Rio de Janeiro <br></br><br></br> </h4>
@@ -202,7 +202,7 @@ function Home() {
                                                                 </div>
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid container-cards-evento" alt="100%x280"
                                                                             src="img/cardsImages/ITW-14-a-17.05.png" />
                                                                         <div className="card-body">
                                                                             <h4 className="card-title titulo-card">ITW International Telecoms Week
@@ -214,7 +214,7 @@ function Home() {
                                                                 </div>
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid container-cards-evento" alt="100%x280"
                                                                             src="img/cardsImages/Abrint-24-a-26.05.png" />
                                                                         <div className="card-body">
                                                                             <h4 className="card-title titulo-card">Abrint Encontro Nacional 2023
@@ -265,7 +265,7 @@ function Home() {
                                                 <h3 className="mb-3 tituloEventos tituloClientes2">Nossos Clientes
                                                     Os Que Acreditam Nos Nossos Serviços </h3>
                                             </div>
-                                            <div className="col-6 text-right">
+                                            <div className="col-6 text-right ">
                                                 <a class="btn button-saibaMais button-card-positioning22 mb-3 mr-1" role="button" data-bs-slide="prev"
                                                     href="#carouselExampleIndicators3">
                                                     <i className="fa fa-arrow-left"></i>
@@ -283,12 +283,12 @@ function Home() {
                                                         <div className="carousel-item active">
                                                             <div className="row">
 
-                                                                <div className="col-md-4 mb-3">
-                                                                    <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                <div className="col-md-4 mb-3 ">
+                                                                    <div className="card ">
+                                                                        <img className="img-fluid container-clientes" alt="100%x280"
                                                                             src="img/clientes/czechTeam.png"
-                                                                            width="200px" height="200px" />
-                                                                        <div class="card-body">
+                                                                            width="200px" height="200px" style={{marginLeft:"12px"}} />
+                                                                        <div className="card-body">
                                                                             <h4 class="card-title titulo-card">Czech Team</h4>
                                                                             <p className="card-text">"Equipe e visitantes da casa da
                                                                                 <br></br>
@@ -307,9 +307,9 @@ function Home() {
                                                                 </div>
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid " alt="100%x280"
                                                                             src="img/clientes/avmedia.png"
-                                                                            width="200px" height="200px" />
+                                                                            width="157px" style={{marginLeft:"15px"}}  />
                                                                         <div className="card-body container-cards-home">
                                                                             <h4 className="card-title titulo-card">AVMEDIA</h4>
                                                                             <p className="card-text">"Gostariamos de agradecer a
@@ -325,9 +325,9 @@ function Home() {
                                                                 </div>
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid container-clientes" alt="100%x280"
                                                                             src="img/clientes/progolf.png"
-                                                                            width="200px" height="200px" />
+                                                                            width="200px" height="200px" style={{marginLeft:"12px"}} />
                                                                         <div className="card-body container-cards-home">
                                                                             <h4 className="card-title titulo-card">Progolf</h4>
                                                                             <p className="card-text">Gostaríamos de agradecer a
@@ -355,9 +355,9 @@ function Home() {
 
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid container-clientes" alt="100%x280"
                                                                             src="img/clientes/sls.png"
-                                                                            width="200px" height="200px" />
+                                                                            width="160px" style={{marginLeft:"19px",marginTop:"15px"}} />
                                                                         <div className="card-body container-cards-home">
                                                                             <h4 className="card-title titulo-card">SLS <br></br><br></br></h4>
                                                                             <p className="card-text">" Fantástico trabalho da equipe
@@ -374,12 +374,12 @@ function Home() {
                                                                 </div>
                                                                 <div class="col-md-4 mb-3">
                                                                     <div class="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid " alt="100%x280"
                                                                             src="./img/clientes/rock-in-rio.png"
-                                                                            width="200px" height="200px" />
-                                                                        <div className="card-body container-cards-home">
+                                                                            width="160px" style={{marginLeft:"15px",marginTop:"15px"}}  />
+                                                                        <div className="card-body container-cards-home ">
                                                                             <h4 className="card-title titulo-card">Rock in Rio</h4>
-                                                                            <p className="card-text">“É com o coração transbordando de
+                                                                            <p className="card-text ">“É com o coração transbordando de
                                                                                 <br></br>
                                                                                 orgulho e gratidão que concluímos <br></br>
                                                                                 uma edição do Rock in Rio. Toda a <br></br>
@@ -402,9 +402,9 @@ function Home() {
                                                                 </div>
                                                                 <div className="col-md-4 mb-3">
                                                                     <div className="card">
-                                                                        <img className="img-fluid" alt="100%x280"
+                                                                        <img className="img-fluid "  alt="100%x280"
                                                                             src="img/clientes/maratona.jpg"
-                                                                            width="200px" height="200px" />
+                                                                            width="170px" height="200px" style={{marginLeft:"19px"}} />
                                                                         <div className="card-body container-cards-home">
                                                                             <h4 className="card-title titulo-card">Rio Maratona</h4>
                                                                             <p className="card-text">"A operação foi um sucesso, a <br></br>

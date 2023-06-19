@@ -34,7 +34,44 @@
 
 .itemLista {
     text-align: left;
+    height: 10em;
+    padding-bottom: 0.8em;
+    
 }
+
+.span-lista-home {
+    position: relative;
+    top: 0.5em;
+    margin-left: 1em;
+    
+}
+
+.itemLista2 {
+   height: 3em;
+   border-radius: 20px;
+   
+}
+.container-lista {
+    height: 10em;
+}
+
+.container-cards-evento {
+    height: 30em;
+}
+
+.container-clientes {
+    height: 10em;
+}
+
+.container-card-texto {
+    height: 17.6em;
+}
+
+.p-card {
+    font-size: 3px;
+}
+
+
 
 .tituloEventos {
     font-weight: 600;
@@ -257,14 +294,14 @@ border-radius: 20px;
 
 .link-home {
 
-    color: rgb(243, 9, 212);
+    color: rgb(161, 25, 143);
     text-decoration: none;
     font-weight: bold;
 }
 
 .link-home:hover {
 
-    color: rgb(243, 9, 212);
+    color: rgb(97, 43, 90);
     text-decoration: underline;
  
 }
