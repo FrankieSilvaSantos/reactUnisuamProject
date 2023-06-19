@@ -1,7 +1,11 @@
-
+@font-face {
+  font-family: 'oldEnglish';
+  src: url('../public/fonts/oldEnglish.ttf') format('ttf');
+}
 html{
   position:relative; 
   min-height: 100%;
+ 
 }
 
 html,body {
@@ -14,6 +18,7 @@ html,body {
 
 body { 
   background: linear-gradient(black , rgb(243, 9, 212) );
+  font-family: oldEnglish ;
 }
 
 .input-user {
