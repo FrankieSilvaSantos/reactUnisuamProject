@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Footer from './layouts/Footer';
 import User from './pages/User';
 import Profile from './pages/Profile';
+import Registrar from './pages/Registrar';
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
 
     <Route path='/user' element={<User></User>}></Route>
   
-    <Route path={`/profile/${localStorage.getItem('user')}`}element={<Profile></Profile>}></Route>
+    <Route path={`/profile/${localStorage.getItem('user ')}`}element={<Profile></Profile>}></Route>
+
+    <Route path='/registrar' element={<Registrar></Registrar>}></Route>
    
   </Routes>
   <Footer></Footer> 

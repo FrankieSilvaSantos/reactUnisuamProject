@@ -525,7 +525,7 @@ function Home() {
                                         <div className="row mb-4">
                                             <div className="col">
                                                 <div className="form">
-                                                    <input type="text" pattern="[A-Z a-z]+" minLength="8" maxLength="25" id="nome" name="nome"
+                                                    <input type="text" pattern="[A-Z a-z]+" minLength="3" maxLength="25" id="nome" name="nome"
                                                         className="form-control input-user" required onChange={((e) => {
                                                             setNome(e.target.value)
                                                         })} />

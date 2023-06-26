@@ -141,7 +141,7 @@ const navigate = useNavigate()
 
 
                   <p className="small fw-bold mt-2 pt-1 mb-0 " >Não possui uma conta? <Link
-                    className=" link-user" to="#">Registrar-se</Link></p>
+                    className=" link-user" to="/registrar">Registrar-se</Link></p>
                 </div>
 
                      {success && (
