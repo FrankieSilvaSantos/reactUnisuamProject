@@ -19,13 +19,13 @@ function App() {
 
   <Routes>
   
-   <Route path={`/${localStorage.getItem('user')}`} element={<Home></Home>}></Route>
+   <Route path={`/${localStorage.getItem('id')}`} element={<Home></Home>}></Route>
 
     <Route path='/footer' element={<Footer></Footer>}></Route>
 
     <Route path='/user' element={<User></User>}></Route>
   
-    <Route path={`/profile/${localStorage.getItem('user ')}`}element={<Profile></Profile>}></Route>
+    <Route path={`/profile/:id`}element={<Profile></Profile>}></Route>
 
     <Route path='/registrar' element={<Registrar></Registrar>}></Route>
    

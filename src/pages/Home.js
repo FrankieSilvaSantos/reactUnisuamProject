@@ -525,7 +525,7 @@ function Home() {
                                         <div className="row mb-4">
                                             <div className="col">
                                                 <div className="form">
-                                                    <input type="text" pattern="[A-Z a-z]+" minLength="3" maxLength="25" id="nome" name="nome"
+                                                    <input type="text" pattern="[A-Z a-z]+" placeholder="Digite o seu nome" minLength="3" maxLength="25" id="nome" name="nome"
                                                         className="form-control input-user" required onChange={((e) => {
                                                             setNome(e.target.value)
                                                         })} />
@@ -534,8 +534,9 @@ function Home() {
                                             </div>
 
                                             <div className="form ">
-                                                <input type="text" pattern="[A-Z a-z]+" minLength="8" maxLength="25" id="empresa"
-                                                    name="empresa" className="form-control input-user" required onChange={((e) => {
+                                                <input type="text" pattern="[A-Z a-z]+" minLength="5" maxLength="18" id="empresa"
+                                                    name="empresa" className="form-control input-user" 
+                                                    placeholder="digite o nome de sua empresa" required onChange={((e) => {
                                                         setEmpresa(e.target.value)
                                                     })} />
                                                 <label className="form-label p-home" htmlFor="empresa">Empresa</label>
@@ -570,7 +571,7 @@ function Home() {
 
                                         <div className="form">
                                             <textarea className="form-control input-user"
-                                                id="mensagem" name="mensagem" required rows="4" onChange={((e) => {
+                                                id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required rows="4" onChange={((e) => {
                                                     setMensagem(e.target.value)
                                                 })}></textarea>
                                             <label className="form-label p-home" htmlFor="mensagem">Mensagem</label>

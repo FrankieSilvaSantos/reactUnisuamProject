@@ -1,9 +1,31 @@
 .titulo-profile {
 
     font-weight: 600;
-    color: rgb(196, 57, 184);
-    margin: 20px;
+    color: black;
+    margin-left: 20px;
     margin-top: 1em;
+   
+
+}
+
+.titulo-profile2 {
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(196, 57, 184);
+   margin-bottom: 40px;
+    margin-top: 1em;
+}
+
+.img-profile {
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+.h2-profile {
+
+    font-weight: 600;
+    color: rgb(196, 57, 184);
+    margin-left: 20px;
 }
 
 .span-profile {
@@ -14,6 +36,11 @@
     border-radius: 20px;
 }
 
+.container-texto-profile {
+    display: inline-block;
+    margin-top: 20px;
+}
+
 .icon-profile {
     margin-bottom: 10px;
 }
@@ -21,17 +48,41 @@
 .button-profile {
     position: relative;
     left: 2em;
-    background-color:rgb(243, 9, 212) !important;
+    background-color:rgb(131, 11, 115) !important;
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
     cursor: pointer;
+    margin-bottom: 3em;
   
 }
 
 .button-profile:hover, .button-profile:active,.button-profile:focus, .button-profile:visited {
     border: 3px solid white !important;
-    box-shadow: 10px 10px 10px rgb(243, 9, 212) !important;
+    box-shadow: 10px 10px 10px rgb(131, 11, 115) !important;
     outline: none !important;
 
+}
+
+.container-button-profile {
+
+    display: flex;
+    justify-content: center;
+    margin-right: 15em;
+}
+
+.span-profile2 {
+    color: white;
+    text-align: center;
+    display: inline;
+}
+
+.container-all-profile {
+    display: flex;
+    justify-content: center;
+}
+
+.container-img-text-profile {
+    display: flex;
+    justify-content: center;
 }

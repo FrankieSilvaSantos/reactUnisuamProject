@@ -16,14 +16,14 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse navbar-positioning" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link className="nav-link  link-style" to={`/${localStorage.getItem('user')}`}><BiHomeHeart className="icon-navbar"></BiHomeHeart> Home</Link>
-              <Link className="nav-link link-style" href="#">Features</Link>
-              <a className="nav-link link-style" href="#">Pricing</a>
+              <Link className="nav-link  link-style" to={`/${localStorage.getItem('id')}`}><BiHomeHeart className="icon-navbar"></BiHomeHeart> Home</Link>
+              {/* <Link className="nav-link link-style" href="#">Features</Link>
+              <a className="nav-link link-style" href="#">Pricing</a> */}
 
 
-              {localStorage.getItem('user') ? (
+              {localStorage.getItem('email') ? (
 
-                <Link className="nav-link  link-style" to={`/profile/${localStorage.getItem('user')}`}><BiGhost className='icon-navbar'></BiGhost> {localStorage.getItem('user')}</Link>
+                <Link className="nav-link  link-style" to={`/profile/${localStorage.getItem('id')}`}><BiGhost className='icon-navbar'></BiGhost> {localStorage.getItem('user')}</Link>
               ): (
                 <Link className="nav-link  link-style" to='/user'><BiGhost className='icon-navbar'></BiGhost> Área do usuário</Link>
               )}

@@ -27,7 +27,7 @@
 
 .button-registrar2 {
 
-    background-color:rgb(243, 9, 212) !important;
+    background-color:rgb(172, 8, 150) !important;
     color: white;
     border: none !important;
     outline: none !important;
@@ -37,7 +37,7 @@
 
 .button-registrar2:hover, .button-registrar2:active,.button-registrar2:focus, .button-registrar2:visited {
     border: 3px solid white !important;
-    box-shadow: 10px 10px 10px rgb(243, 9, 212) !important;
+    box-shadow: 10px 10px 10px rgb(172, 8, 150) !important;
     outline: none !important;
     color: white;
 
@@ -49,7 +49,7 @@
 
 .img-registrar {
     border-radius: 20px;
-    margin-top: 2em;
+    margin-top: 3em;
     width: auto;
     box-sizing: border-box;
 }

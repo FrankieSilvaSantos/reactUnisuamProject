@@ -52,12 +52,18 @@ const navigate = useNavigate()
 
         data.map((items) => {
 
-          if (items.user === user && items.password === password) {
+          if (items.email === user && items.password === password) {
 
             console.log('Logado com sucesso!!')
             localStorage.setItem('id', items.id)
-            localStorage.setItem('user', items.user)
-            setTimeout(() => navigate(`/${localStorage.getItem('user')} `),1000);
+            localStorage.setItem('user',items.nome)
+            localStorage.setItem('email',items.email)
+            localStorage.setItem('cpf',items.cpf)
+            localStorage.setItem('bairro',items.bairro)
+            localStorage.setItem('endereco',items.endereco)
+            localStorage.setItem('telefone',items.telefone)
+
+            setTimeout(() => navigate(`/${localStorage.getItem('id')} `),1000);
             
             return setSuccess(true)
           } 
@@ -73,7 +79,7 @@ const navigate = useNavigate()
 
        
         if(items.user !== user && items.password !== password) {
-        console.log('Login ou senha incorretos!!')
+        console.log('Email ou senha incorretos!!')
       setTimeout(() => window.location.reload(),1000);
       return setError(false)
         }  
@@ -114,9 +120,9 @@ const navigate = useNavigate()
 
 
                 <div className="form mb-4">
-                  <input type="text" pattern='[A-Za-z0-9]+' minLength={5} maxLength={15} required id="user" name="user"
+                  <input type="email"  pattern=".+@gmail\.com"   required id="user" name="user"
                     className="form-control form-control-lg input-user"
-                    placeholder="Entre um nome de usuário válido" onChange={((e) => {
+                    placeholder="Entre um email válido" onChange={((e) => {
                       setUser(e.target.value)
                     })} />
 
@@ -151,7 +157,7 @@ const navigate = useNavigate()
 
                   )} 
                   
-                  {!error && (
+                  {!error && !success && (
 
                     <div className="alert alert-danger error-user" role="alert">
                     <BiDizzy className="icon-user"></BiDizzy> Login ou senha incorretos!!
