@@ -4,11 +4,11 @@
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    gap: 5em;
+    gap: 4em;
      border-radius: 20px;
     border:solid 2px white; 
     padding: 40px 40px 40px 40px;
-    width:80%;
+    width:auto;
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
 
 }
@@ -16,6 +16,7 @@
 .container-form-registrar2 {
     display: flex;
     justify-content: center;
+    width: auto;
 }
 
 
@@ -49,8 +50,18 @@
 .img-registrar {
     border-radius: 20px;
     margin-top: 2em;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.container-img-registrar {
+
+    width: auto;
+
 }
 
 .form-registrar {
     margin-top: 2em;
+    width: auto;
 }
+

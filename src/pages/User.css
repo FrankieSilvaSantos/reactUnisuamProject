@@ -39,6 +39,22 @@
 
 }
 
+.check-user {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 20px;
+    }
+    
+    .check-user:active,.check-user:focus, .check-user:visited, .check-user:checked {
+        background-color: rgb(243, 9, 212) !important;
+        color: rgb(243, 9, 212) !important;
+        outline:2px solid rgb(243, 9, 212) !important;
+        border: 2px solid rgb(243, 9, 212) !important;
+       
+    
+    }
+
 .container-user {
     
     margin-top: 7em;
