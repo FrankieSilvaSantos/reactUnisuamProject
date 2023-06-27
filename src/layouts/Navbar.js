@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { BiHomeHeart } from 'react-icons/bi'
 import './Navbar.css'
 import { BiGhost } from "react-icons/bi";
+import {FaFortAwesomeAlt} from 'react-icons/fa'
 
 function Navbar() {
 
@@ -17,8 +18,8 @@ function Navbar() {
           <div className="collapse navbar-collapse navbar-positioning" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <Link className="nav-link  link-style" to={`/${localStorage.getItem('id')}`}><BiHomeHeart className="icon-navbar"></BiHomeHeart> Home</Link>
-              {/* <Link className="nav-link link-style" href="#">Features</Link>
-              <a className="nav-link link-style" href="#">Pricing</a> */}
+               <Link className="nav-link link-style" to={'/carreiras'}><FaFortAwesomeAlt></FaFortAwesomeAlt> Carreiras</Link>
+              <a className="nav-link link-style" href="#">Pricing</a> 
 
 
               {localStorage.getItem('email') ? (

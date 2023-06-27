@@ -1,0 +1,70 @@
+.input-user2 {
+
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  
+   
+  
+  }
+  
+  .input-user2:focus, .input-user2:active {
+  
+    border:3px solid rgb(243, 9, 212) !important;
+    box-shadow:19px 10px 10px rgb(196, 57, 184) !important;
+    outline: none !important;
+  
+  }
+
+  .button-carreiras {
+    background-color:rgb(243, 9, 212) !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+    left: 20px;
+
+  }
+
+
+  
+.button-carreiras:hover, .button-carreiras:active,.button-carreiras:focus, .button-carreiras:visited {
+    border: 3px solid white !important;
+    box-shadow: 10px 10px 10px rgb(243, 9, 212) !important;
+    outline: none !important;
+
+}
+
+.titulo-carreiras {
+    color: rgb(243, 21, 225);
+    margin-top: 4.5em;
+}
+
+.p-carreiras {
+    color: white;
+    font-size: 20px;
+}
+
+.container-texto-carreiras {
+    width: auto;
+    margin-left: 2em;
+}
+
+
+
+.container-all-carreiras {
+    display: grid;
+    grid-template-columns: 1fr 38%;
+    width: auto;
+    /* margin-left: 8em; */
+  
+}
+
+.img-carreiras {
+    height: 350px;
+    margin-top: 5.5em;
+    border-radius: 20px;
+
+}

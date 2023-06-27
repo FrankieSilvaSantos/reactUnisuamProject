@@ -1,0 +1,62 @@
+
+.height{
+
+    margin-top: 10em;
+    display: flex;
+    float: left;
+    position: relative;
+    right: 8em;
+
+}
+
+.form{
+
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    
+
+}
+
+.form span{
+
+        position: absolute;
+    right: -120px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.form-input:focus{
+
+    border:3px solid rgb(243, 9, 212) !important;
+    box-shadow:19px 10px 10px rgb(196, 57, 184) !important;
+    outline: none !important;
+}
+
+.search-style {
+    
+}
