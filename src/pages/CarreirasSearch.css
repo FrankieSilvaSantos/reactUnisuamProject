@@ -12,6 +12,7 @@
 .form{
 
     position: relative;
+    
 }
 
 .form .fa-search{
@@ -30,16 +31,18 @@
     top: 13px;
     padding: 2px;
     border-left: 1px solid #d1d5db;
+  
 
 }
 
 .left-pan{
-    padding-left: 7px;
+    padding-right: 10px;
 }
 
 .left-pan i{
    
-   padding-left: 10px;
+   padding-right: 10em;
+   margin-left: 9px;
 }
 
 .form-input{

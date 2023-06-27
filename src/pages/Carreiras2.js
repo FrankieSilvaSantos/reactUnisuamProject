@@ -10,16 +10,9 @@ function Carreiras2() {
 
         <>
          
-                <div className="container ">
+       
 
-              
-
-                    <div className="row height d-flex justify-content-center align-items-center ">
-
-                            
-                        <div className="col-md-6 ">
-
-
+                        <form className='container-form-carreiras2'>
                         <div className=''>
                             <div className="form ">
                                 <i className="fa fa-search search-style" aria-hidden="true"></i>
@@ -36,10 +29,9 @@ function Carreiras2() {
                             </select>
                             </div>
                             </div>
+                            </form>
                           
-                        </div>
-                        </div>
-                    </div>
+                        
 
             
 
