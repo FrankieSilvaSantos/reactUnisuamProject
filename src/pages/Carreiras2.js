@@ -10,6 +10,8 @@ function Carreiras2() {
     const [data, setData] = useState([])
     const [query, setQuery] = useState('')
 
+    const [selectQuery,setSelectQuery] = useState()
+
 
     const [active,setActive] = useState(false)
 
@@ -62,7 +64,13 @@ function Carreiras2() {
                         </div>
 
                         <div>
-                            <select defaultValue={'default'} className="form-select select-carreiras2" aria-label="Default select example ">
+                            <select defaultValue={'default'} id='select' name='select' className="form-select select-carreiras2" 
+                            aria-label="Default select example " onChange={((e) => {
+                                setSelectQuery(e.target.value)
+                                if(document.hasFocus('select')) {
+                                    setActive(false)
+                                }
+                            })}>
                                 <option className='' value={'default'} disabled>Selecione uma opção</option>
                                 <option className='option-carreiras2' value="Rio de Janeiro">Rio de Janeiro</option>
                                 <option className='option-carreiras2' value="São Paulo">São Paulo</option>
@@ -79,8 +87,11 @@ function Carreiras2() {
                         <section>
                         {active && (
                             <ul class="list-group list-group-light">
-                            {data.filter(vagas => vagas.vagas_nome.toLowerCase().includes(query)).map((items) => {
-                        
+                            {data.filter((vagas,) => vagas.vagas_nome.toLowerCase().includes(query) && vagas.cidade.includes(selectQuery)).map((items) => {
+                                
+
+                                    
+                              
 
                                     
                               
@@ -99,7 +110,8 @@ function Carreiras2() {
                                         </section>
                                         </section>
                                         </li>
-                                })}
+                                        
+                                 })} 
 
                                 
                             </ul>
