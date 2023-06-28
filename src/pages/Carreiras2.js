@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import './Carreiras2.css'
 import './CarreirasSearch.css'
-import { FaSistrix } from 'react-icons/fa'
 import axios from "axios";
+import { GiBleedingEye } from "react-icons/gi";
+
 
 function Carreiras2() {
 
@@ -88,8 +89,16 @@ function Carreiras2() {
 
 
                                   return  <li class="list-group-item list-carreiras2">
+                                    <section className='section-list-carreiras2'>
+                                        <section >
                                         <h3>{items.vagas_nome}</h3>
-                                        <p>{items.cidade}</p></li>
+                                        <p>{items.cidade}</p>
+                                        </section>
+                                        <section className='container-button-carreiras22'>
+                                        <button  className="btn btn-primary btn-lg button-carreiras22"><span className='button-span-carreiras2'>Descrição</span> <GiBleedingEye className='icon-carreiras2'></GiBleedingEye></button>
+                                        </section>
+                                        </section>
+                                        </li>
                                 })}
 
                                 

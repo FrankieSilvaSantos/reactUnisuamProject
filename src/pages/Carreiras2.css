@@ -55,6 +55,8 @@
     box-shadow: none !important;
     cursor: pointer;
     margin-top: 0.5em;
+    
+    
 }
 
 .button-carreiras2:hover, .button-carreiras2:active,.button-carreiras2:focus, .button-carreiras2:visited {
@@ -64,6 +66,48 @@
 
 }
 
+.button-carreiras22 {
+
+    background-color:transparent !important;
+    border: 3px solid white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 10px;
+    /* height: 45px; */
+  
+    height: 5em;
+    cursor: pointer;
+    margin-right: 2em;
+    width: 50px;
+   
+    
+    transition: 0.1s;
+    
+}
+
+.button-carreiras22:hover , .button-carreiras22:active,.button-carreiras22:focus, 
+.button-carreiras22:visited {
+    border: 3px solid white !important;
+    box-shadow: 10px 10px 10px rgb(252, 209, 246)  !important;
+    outline: none !important;
+    
+    width: 15em !important;
+}
+
+.button-carreiras22:hover .button-span-carreiras2  {
+    color: white;
+   
+}
+
+.button-carreiras22:hover .icon-carreiras2 { 
+    position: relative;
+    bottom: 0em;
+    right: 0em; 
+    
+}
+
+
+
 .list-carreiras2 {
     background-color: transparent;
     color:rgb(248, 200, 242);
@@ -72,6 +116,40 @@
 .container-list-carreiras2 {
 
     
+}
+
+.section-list-carreiras2 {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon-carreiras2  {
+    font-size: 20px;
+    align-items: center;
+     position: relative;
+    bottom: 0.5em;
+    right: 0.2em; 
+    
+    
+}
+
+.icon-carreiras2:hover,   {
+    
+   
+    
+}
+
+.icon-carreiras2:hover {
+    color: red;
+text-align: end;
+}
+
+.button-span-carreiras2 {
+            color: transparent;
+            text-align: start;
+       
 }
 
 
