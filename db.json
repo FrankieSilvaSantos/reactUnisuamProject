@@ -67,5 +67,35 @@
       "tipo_suporte": "administrativoFinanceiro",
       "id": 3
     }
+  ],
+
+  "vagas": [
+
+      {
+
+          "vagas_nome": "Desenvolvimento Web",
+          "cidade": "Rio de Janeiro",
+          "descricao": "conhecimentos de js e html/css",
+          "vagas_qtd": 3,
+          "id":1
+
+      },
+
+      {
+      "vagas_nome": "Desenvolvimento Web",
+      "cidade": "São Paulo",
+      "descricao": "conhecimentos de js e html/css",
+      "vagas_qtd": 3,
+      "id":2
+      },
+      {
+        "vagas_nome": "Mobile",
+        "cidade": "São Paulo",
+        "descricao": "Conhecimentos de Flutter",
+        "vagas_qtd": 5,
+        "id":3
+        }
+
   ]
+
 }

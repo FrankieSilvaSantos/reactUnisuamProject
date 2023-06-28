@@ -9,6 +9,20 @@
     background-color:  rgb(241, 163, 231) 
 }
 
+.container-all-carreiras2 {
+    display: grid;
+
+    grid-template-columns: 1fr 50%;
+}
+
+.titulo-vagas-carreiras2 {
+    margin-top: 2em;
+   
+}
+
+.container-titul-carreiras2 {
+   
+}
 
 .select-carreiras2 {
 
@@ -29,6 +43,35 @@
     box-shadow:19px 10px 10px rgb(196, 57, 184) !important;
     outline: none !important;
   
+}
+
+
+
+.button-carreiras2 {
+
+    background-color:transparent !important;
+    border: 3px solid white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+
+.button-carreiras2:hover, .button-carreiras2:active,.button-carreiras2:focus, .button-carreiras2:visited {
+    border: 3px solid white !important;
+    box-shadow: 10px 10px 10px rgb(252, 209, 246)  !important;
+    outline: none !important;
+
+}
+
+.list-carreiras2 {
+    background-color: transparent;
+    color:rgb(248, 200, 242);
+}
+
+.container-list-carreiras2 {
+
+    
 }
 
 
