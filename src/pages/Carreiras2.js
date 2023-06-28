@@ -9,6 +9,7 @@ function Carreiras2() {
     const [data, setData] = useState([])
     const [query, setQuery] = useState('')
 
+
     const [active,setActive] = useState(false)
 
 
@@ -30,10 +31,11 @@ function Carreiras2() {
             .then(() => {
             setActive(true)
             })
-            .then(() => {
-                setTimeout(() => setActive(false),3000);
-            })
+
+            
+          
         }
+   
 
     return (
 
@@ -49,8 +51,11 @@ function Carreiras2() {
                     <div className='container-form-carreiras2'>
                         <div className="form ">
                             <i className="fa fa-search search-style" aria-hidden="true"></i>
-                            <input type="text" className="form-control form-input" placeholder="Busque sua vaga" onChange={((e) => {
+                            <input type="text" id='buscar' name='buscar' className="form-control form-input" placeholder="Busque sua vaga" onChange={((e) => {
                                 setQuery(e.target.value)
+                                if(document.hasFocus('buscar')){
+                                    setActive(false)
+                                }
                             })} />
                             <span className="left-pan"> <i className="fa-solid fa-ghost" style={{ color: "#000000" }}></i></span>
                         </div>
