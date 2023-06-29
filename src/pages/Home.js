@@ -125,7 +125,7 @@ function Home() {
                             <div className="card-body">
                                 <h5 className="card-title">FAQ</h5>
                                 <p className="card-text">Perguntas frequentes feitas por nossos clientes <br></br><br></br></p>
-                                <a href="#" className="btn button-saibaMais">Saiba mais</a>
+                                <Link to='/faq' className="btn button-saibaMais">Saiba mais</Link>
                             </div>
                         </div>
                         <div className="card" style={{ width: "18rem" }}>

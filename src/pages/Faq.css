@@ -1,0 +1,53 @@
+.titulo-faq {
+
+    color: rgb(214, 162, 214);
+    margin: 2em 0 0 1em;
+    border-bottom: 2px solid white;
+    width: 25%;
+}
+
+.accordion {
+    margin-top: 3em;
+    width: 30%;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+
+
+.accordion-body {
+
+    color:rgb(252, 174, 239) ;
+}
+
+.accordion-button {
+    background-color:rgb(252, 174, 239) !important;
+    color: white !important;
+    font-weight: bold;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus,.accordion-button:active, .accordion-button:visited {
+    background-color:rgb(252, 174, 239) !important;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.icon-faq {
+    color: black
+}
+
+
+
+.icon-faq2 {
+    color: black
+}
+
+.p-faq {
+    font-weight: bold;
+}
+
+
+

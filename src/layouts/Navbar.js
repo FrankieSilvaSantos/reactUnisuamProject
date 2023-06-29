@@ -4,6 +4,7 @@ import './Navbar.css'
 import { BiGhost } from "react-icons/bi";
 import {FaFortAwesomeAlt} from 'react-icons/fa'
 import {GiBookmarklet} from 'react-icons/gi'
+import {HiQuestionMarkCircle} from 'react-icons/hi2'
 
 function Navbar() {
 
@@ -21,6 +22,7 @@ function Navbar() {
               <Link className="nav-link  link-style" to={`/${localStorage.getItem('id')}`}><BiHomeHeart className="icon-navbar"></BiHomeHeart> Home</Link>
                <Link className="nav-link link-style" to={'/carreiras'}><FaFortAwesomeAlt></FaFortAwesomeAlt> Carreiras</Link>
               <Link className="nav-link link-style" to='/about'><GiBookmarklet></GiBookmarklet> About</Link> 
+              <Link className="nav-link link-style" to='/faq'><HiQuestionMarkCircle></HiQuestionMarkCircle> F.A.Q</Link> 
 
 
               {localStorage.getItem('email') ? (

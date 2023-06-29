@@ -10,6 +10,7 @@ import Registrar from './pages/Registrar';
 import Carreiras from './pages/Carreiras';
 import Carreiras2 from './pages/Carreiras2';
 import About from './pages/About';
+import Faq from './pages/Faq';
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
     <Route path='/carreiras2' element={<Carreiras2></Carreiras2>}></Route>
 
     <Route path='/about' element={<About></About>}></Route>
+
+    <Route path='/faq' element={<Faq></Faq>}></Route>
    
   </Routes>
   <Footer></Footer> 
