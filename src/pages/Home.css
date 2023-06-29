@@ -315,8 +315,20 @@ border-radius: 20px;
  
 }
 
-.saibaMais-img{
+.card-title {
+    color: rgb(230, 19, 201);
+}
+
+.saibaMais-img2{
     margin-top: 2em;
+    width: 100%;
+    border-bottom: 3px solid rgba(245, 159, 223, 0.651);
+}
+
+.saibaMais-img1{
+   height: 182px;
+   width: 260px;
+   border-bottom: 3px solid rgba(245, 159, 223, 0.651);
 }
 
 .icon-home {

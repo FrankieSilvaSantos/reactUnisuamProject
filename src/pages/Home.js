@@ -121,32 +121,22 @@ function Home() {
                 <div className="container cardContainer d-flex justify-content-center">
                     <div className="row d-flex justify-content-center cardContainer2 ">
                         <div className="card" style={{ width: "18rem" }}>
-                            <img src="./img/index/globe-solid.svg" className="card-img-top saibaMais-img" alt="..." height="150px" />
+                            <img src="./img/home/faq.jpg" className="card-img-top saibaMais-img1" alt="..."  />
                             <div className="card-body">
-                                <h5 className="card-title">Internet</h5>
-                                <p className="card-text">Solução de internet em Fibra com alta qualidade e disponibilidade. <br></br><br></br></p>
+                                <h5 className="card-title">FAQ</h5>
+                                <p className="card-text">Perguntas frequentes feitas por nossos clientes <br></br><br></br></p>
                                 <a href="#" className="btn button-saibaMais">Saiba mais</a>
                             </div>
                         </div>
                         <div className="card" style={{ width: "18rem" }}>
-                            <img src="./img/index/telefonia.svg" className="card-img-top saibaMais-img" alt="..." height="150px" />
+                            <img src="./img/home/about.jpg" className="card-img-top saibaMais-img2" alt="..." height="150px" />
                             <div className="card-body">
-                                <h5 className="card-title">Telefonia</h5>
-                                <p className="card-text">Solução inteligente de PABX IP na núvem para sua telefonia fixa. <br></br><br></br></p>
+                                <h5 className="card-title">ABOUT</h5>
+                                <p className="card-text">Conheça mais um pouco sobre nossa empresa <br></br><br></br></p>
                                 <a href="#" className="btn button-saibaMais">Saiba mais</a>
                             </div>
                         </div>
-                        <div className="card" style={{ width: "18rem" }}>
-                            <img src="./img/index/mobile-solid.svg" className="card-img-top saibaMais-img" alt="..." height="150px" />
-                            <div className="card-body">
-                                <h5 className="card-title">Mobilidade</h5>
-                                <p className="card-text">Monte planos de celular personalizados para a sua empresa e pague apenas pelo
-                                    que precisa.
-                                    <br></br>
-                                </p>
-                                <a href="#" className="btn button-saibaMais">Saiba mais</a>
-                            </div>
-                        </div>
+                        
 
 
                         <h1 className="tituloPlanosMobilidade">Conheça nossos planos de mobilidade</h1>
