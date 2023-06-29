@@ -680,7 +680,7 @@ function Home() {
                                     Wpp: (21)93618-0100</p>
                                 <h4 className="p-home">Carreiras</h4>
                                 <p className="p-home">
-                                    <Link className="link-home" to="/home/carreiras">Clique aqui</Link> para verificar as vagas disponíveis.
+                                    <Link className="link-home" to="/carreiras">Clique aqui</Link> para verificar as vagas disponíveis.
                                 </p>
                             </div>
 

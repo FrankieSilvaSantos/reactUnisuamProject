@@ -5,8 +5,12 @@ import axios from "axios";
 import { GiBleedingEye } from "react-icons/gi";
 import { GiSharpSmile } from 'react-icons/gi'
 import { GiSkullCrossedBones } from 'react-icons/gi'
+import {MdSentimentVerySatisfied} from 'react-icons/md'
+import { useNavigate } from 'react-router-dom';
 
 function Carreiras2() {
+
+    const navigate = useNavigate()
 
     const [data, setData] = useState([])
     const [query, setQuery] = useState('')
@@ -17,18 +21,10 @@ function Carreiras2() {
     const [active, setActive] = useState(false)
     const [descricao, setDescricao] = useState(false)
     const [gif, setGif] = useState(false)
+    const [vagas, setVagas] = useState(false)
 
 
 
-    function handleDescricao() {
-
-
-        setDescricao(true)
-
-        setGif(true)
-
-        // setTimeout(() => setGif(true),1000);
-    }
 
 
 
@@ -93,7 +89,7 @@ function Carreiras2() {
                         <section className='container-border-carreiras2'></section>
                     </div>
                     <section className='container-list-carreiras2'>
-                       
+
                         <section className='container-titulo-carreiras2'>
                             <h1 className='titulo-vagas-carreiras2'>Vagas <span className='span-titulo-carreiras2'>Abertas</span></h1>
                         </section>
@@ -132,8 +128,18 @@ function Carreiras2() {
 
                                                     }}
                                                     ><span className='button-span-carreiras2'>Descrição</span> <GiBleedingEye className='icon-carreiras2'></GiBleedingEye></button>
-                                                    <button className="btn btn-primary btn-lg button-carreiras22"
-                                                    ><span className='button-span-carreiras2'>Vagas {items.vagas_qtd}</span> <GiSharpSmile className='icon-carreiras2b'></GiSharpSmile></button>
+                                                    <button className="btn btn-primary btn-lg button-carreiras22" onClick={() => {
+                                                        setVagas(true)
+                                                        setTimeout(() => {
+                                                            setVagas(false)
+                                                            window.location.href = 'https://auth.solides.jobs/sign-in'
+                                                        }, 2000);
+
+
+                                                    }}>
+
+
+                                                        <span className='button-span-carreiras2'>Vagas {items.vagas_qtd}</span> <GiSharpSmile className='icon-carreiras2b'></GiSharpSmile></button>
 
 
                                                     {descricao && (
@@ -148,12 +154,21 @@ function Carreiras2() {
 
                                                     )}
 
+                                                    {vagas && (
+                                                        <div className='container-descricao-carreiras2'>
+                                                           
+                                                            <p className='p-descricao-carreiras2b'>Boa viagem <MdSentimentVerySatisfied className='icon-vagas-carreiras2'></MdSentimentVerySatisfied></p>
+
+                                                            </div>
+                                                    )}
 
 
 
 
 
-                                                </section>
+
+                                                        </section>
+                                                        
                                             </section>
                                         </li>
 
@@ -167,6 +182,7 @@ function Carreiras2() {
                     </section>
                 </form>
                 
+
                 {gif && (
                     <img className='rounded-circle gif-carreiras2' src='/img/carreiras/carreiras.gif'></img>
 
