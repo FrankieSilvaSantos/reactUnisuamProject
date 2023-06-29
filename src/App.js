@@ -9,6 +9,7 @@ import Profile from './pages/Profile';
 import Registrar from './pages/Registrar';
 import Carreiras from './pages/Carreiras';
 import Carreiras2 from './pages/Carreiras2';
+import About from './pages/About';
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
     <Route path='/carreiras' element={<Carreiras></Carreiras>}></Route>
 
     <Route path='/carreiras2' element={<Carreiras2></Carreiras2>}></Route>
+
+    <Route path='/about' element={<About></About>}></Route>
    
   </Routes>
   <Footer></Footer> 

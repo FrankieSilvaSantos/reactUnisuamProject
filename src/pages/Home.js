@@ -133,7 +133,7 @@ function Home() {
                             <div className="card-body">
                                 <h5 className="card-title">ABOUT</h5>
                                 <p className="card-text">Conheça mais um pouco sobre nossa empresa <br></br><br></br></p>
-                                <a href="#" className="btn button-saibaMais">Saiba mais</a>
+                                <Link to='/about' className="btn button-saibaMais">Saiba mais</Link>
                             </div>
                         </div>
                         

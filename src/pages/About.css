@@ -1,0 +1,41 @@
+.img-about {
+
+    width: 300px;
+    border-radius: 20px;
+    margin-left: 6em;
+}
+
+.container-img-about {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+ 
+
+}
+
+.border-img-about {
+    border-bottom: 3px solid rgb(241, 168, 223);
+    width: 500px;
+    margin-top: 20px;
+    
+}
+
+.container-text-about {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    margin-top: 3em;
+    gap: 2em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+}
+
+.p-about {
+   font-weight: bold;
+   color: white;
+
+}
+
+.titulo-about {
+    color: rgb(255, 159, 242)
+}

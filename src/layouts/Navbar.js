@@ -3,6 +3,7 @@ import { BiHomeHeart } from 'react-icons/bi'
 import './Navbar.css'
 import { BiGhost } from "react-icons/bi";
 import {FaFortAwesomeAlt} from 'react-icons/fa'
+import {GiBookmarklet} from 'react-icons/gi'
 
 function Navbar() {
 
@@ -19,7 +20,7 @@ function Navbar() {
             <div className="navbar-nav">
               <Link className="nav-link  link-style" to={`/${localStorage.getItem('id')}`}><BiHomeHeart className="icon-navbar"></BiHomeHeart> Home</Link>
                <Link className="nav-link link-style" to={'/carreiras'}><FaFortAwesomeAlt></FaFortAwesomeAlt> Carreiras</Link>
-              <a className="nav-link link-style" href="#">Pricing</a> 
+              <Link className="nav-link link-style" to='/about'><GiBookmarklet></GiBookmarklet> About</Link> 
 
 
               {localStorage.getItem('email') ? (
