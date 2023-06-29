@@ -106,6 +106,42 @@
     
 }
 
+.button-carreiras22:hover .icon-carreiras2b { 
+    position: relative;
+     bottom: 0.2em;
+    right: 0em;  
+   
+        margin-top: 3px;
+}
+
+.button-carreiras22:focus .button-span-carreiras2 { 
+    position: relative;
+    /* bottom: 0em;
+    right: 0em;  */
+   color: white;
+    
+}
+
+.button-carreiras22:focus .icon-carreiras2 { 
+    
+     bottom: 0em ;
+    right: 0em;  
+    top: 0em;
+    
+  
+    
+}
+
+.button-carreiras22:focus .icon-carreiras2b { 
+    
+    bottom: 0em ;
+   right: 0em;  
+   top: 0em;
+   
+ 
+   
+}
+
 
 
 .list-carreiras2 {
@@ -135,6 +171,16 @@
     
 }
 
+.icon-carreiras2b  {
+    font-size: 20px;
+    align-items: center;
+     position: relative;
+    bottom: 1.3em;
+    right: 0.2em; 
+    
+    
+}
+
 .icon-carreiras2:hover,   {
     
    
@@ -146,13 +192,84 @@
 text-align: end;
 }
 
+.icon-carreiras2b:hover {
+    color: red;
+text-align: end;
+}
+
 .button-span-carreiras2 {
             color: transparent;
             text-align: start;
        
 }
 
+.gif-carreiras2 {
+    border: 2px solid black;
+    position: fixed;
+    left: 33em;
+    bottom: 13em;
+}
 
+.container-descricao-carreiras2 { 
+    position: fixed;
+    color: black;
+    right: 12em;
+    bottom: 8em;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 80px;
+    font-size: 30px;
+    background-color: rgb(248, 200, 242);
+}
+
+
+.p-descricao-carreiras2 {
+
+    /* position: fixed;
+    color: black;
+    right: 12em;
+    bottom: 8em;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 80px;
+    font-size: 30px;
+    background-color: rgb(248, 200, 242); */
+
+}
+
+.button-descricao-carreiras2 {
+    position: fixed;
+    right: 37em;
+    bottom: 40em;
+    border: 2px solid black !important;
+}
+
+.icon-descricao-carreiras2 {
+
+    font-size: 30px;
+    position: fixed;
+    right: 13.3em;
+    bottom: 13.7em;
+    color: black;
+
+}
+
+.button-descricao-carreiras2:hover, .button-descricao-carreiras2:focus  { 
+    width: 15em !important;
+    border: 2px solid black !important;
+}
+
+.button-span-descricao-carreiras2 {
+    color: transparent;
+}
+
+.button-descricao-carreiras2:hover .button-span-descricao-carreiras2 {
+    color:black !important;
+}
+
+.button-descricao-carreiras2:focus .button-span-descricao-carreiras2 {
+    color:black !important;
+}
 
 
 
