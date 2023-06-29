@@ -5,7 +5,6 @@ import axios from "axios";
 import { GiBleedingEye } from "react-icons/gi";
 import { GiSharpSmile } from 'react-icons/gi'
 import { GiSkullCrossedBones } from 'react-icons/gi'
-import {MdSentimentVerySatisfied} from 'react-icons/md'
 import { useNavigate } from 'react-router-dom';
 
 function Carreiras2() {
@@ -21,7 +20,8 @@ function Carreiras2() {
     const [active, setActive] = useState(false)
     const [descricao, setDescricao] = useState(false)
     const [gif, setGif] = useState(false)
-    const [vagas, setVagas] = useState(false)
+    const [gif2, setGif2] = useState(false)
+    // const [vagas, setVagas] = useState(false)
 
 
 
@@ -129,11 +129,11 @@ function Carreiras2() {
                                                     }}
                                                     ><span className='button-span-carreiras2'>Descrição</span> <GiBleedingEye className='icon-carreiras2'></GiBleedingEye></button>
                                                     <button className="btn btn-primary btn-lg button-carreiras22" onClick={() => {
-                                                        setVagas(true)
+                                                        setGif2(true)
                                                         setTimeout(() => {
-                                                            setVagas(false)
+                                                            setGif2(false)
                                                             window.location.href = 'https://auth.solides.jobs/sign-in'
-                                                        }, 2000);
+                                                        }, 6000);
 
 
                                                     }}>
@@ -154,21 +154,14 @@ function Carreiras2() {
 
                                                     )}
 
-                                                    {vagas && (
-                                                        <div className='container-descricao-carreiras2'>
-                                                           
-                                                            <p className='p-descricao-carreiras2b'>Boa viagem <MdSentimentVerySatisfied className='icon-vagas-carreiras2'></MdSentimentVerySatisfied></p>
-
-                                                            </div>
-                                                    )}
+                                                   
 
 
 
 
 
+                                                </section>
 
-                                                        </section>
-                                                        
                                             </section>
                                         </li>
 
@@ -181,11 +174,18 @@ function Carreiras2() {
 
                     </section>
                 </form>
-                
+
 
                 {gif && (
                     <img className='rounded-circle gif-carreiras2' src='/img/carreiras/carreiras.gif'></img>
 
+                )}
+
+                {gif2 && (
+                    <div>
+                    <h1 className='gif2-title'>BOA VIAGEM</h1>
+                    <img className='rounded-circle gif-carreiras2b' src='/img/carreiras/vagas.gif'></img>
+                    </div>
                 )}
 
 

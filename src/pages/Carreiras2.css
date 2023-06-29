@@ -221,6 +221,20 @@ text-align: end;
     bottom: 13em;
 }
 
+.gif-carreiras2b {
+    border: 2px solid black;
+    position: fixed;
+    height: 300px;
+    left: 33em;
+    bottom: 13em;
+}
+
+.gif2-title {
+    position: fixed;
+     left: 14em;
+    bottom: 3em; 
+}
+
 .container-descricao-carreiras2 { 
     position: fixed;
     color: black;
