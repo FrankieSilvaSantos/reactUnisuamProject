@@ -90,10 +90,12 @@ function Carreiras2() {
                             </select>
                             <button className="btn btn-primary btn-lg button-carreiras2">Buscar</button>
                         </div>
+                        <section className='container-border-carreiras2'></section>
                     </div>
                     <section className='container-list-carreiras2'>
+                       
                         <section className='container-titulo-carreiras2'>
-                            <h1 className='titulo-vagas-carreiras2'>Vagas Abertas</h1>
+                            <h1 className='titulo-vagas-carreiras2'>Vagas <span className='span-titulo-carreiras2'>Abertas</span></h1>
                         </section>
 
                         <section>
@@ -164,6 +166,7 @@ function Carreiras2() {
 
                     </section>
                 </form>
+                
                 {gif && (
                     <img className='rounded-circle gif-carreiras2' src='/img/carreiras/carreiras.gif'></img>
 

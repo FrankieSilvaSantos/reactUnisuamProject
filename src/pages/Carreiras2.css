@@ -1,13 +1,24 @@
 .container-form-carreiras2 {
-
+    position: relative;
     margin: 10em 0 0 3em;
     border: solid 2px black;
     padding: 20px;
     width: 20em;
     padding: 30px 10px 30px 30px;
     border-radius: 20px;
-    background-color:  rgb(241, 163, 231) 
+    background-color:  rgb(241, 163, 231);
+    
 }
+
+.container-border-carreiras2 {
+    border-right: 2px solid white;
+    height: 20px;
+    position: absolute;
+    left: 120%;
+    top: -50%;
+    height: 30em;
+}
+
 
 .container-all-carreiras2 {
     display: grid;
@@ -17,7 +28,11 @@
 
 .titulo-vagas-carreiras2 {
     margin-top: 2em;
-   
+   color: rgb(240, 138, 226) ;
+}
+
+.span-titulo-carreiras2 {
+    border-bottom: 2px solid rgb(233, 68, 211);
 }
 
 .container-titul-carreiras2 {
@@ -149,10 +164,6 @@
     color:rgb(248, 200, 242);
 }
 
-.container-list-carreiras2 {
-
-    
-}
 
 .section-list-carreiras2 {
 
