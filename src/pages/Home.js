@@ -306,7 +306,7 @@ function Home() {
                                                     conectarem a internet com a máxima qualidade,<br></br> disponibilidade e segurança
                                                 </p>
 
-                                                <a href="#" className="btn btn-primary button-saibaMais button-saibaMais-positioning">Saiba Mais</a>
+                                                <a href="#empresa" className="btn btn-primary button-saibaMais button-saibaMais-positioning">Saiba Mais</a>
                                             </div>
                                         </div>
                                     </div>
