@@ -6,7 +6,7 @@ import { GiBleedingEye } from "react-icons/gi";
 import { GiSharpSmile } from 'react-icons/gi'
 import { GiSkullCrossedBones } from 'react-icons/gi'
 import { useNavigate } from 'react-router-dom';
-import {BiDizzy} from 'react-icons/bi'
+import { BiDizzy } from 'react-icons/bi'
 
 function Carreiras2() {
 
@@ -14,9 +14,10 @@ function Carreiras2() {
 
     const [data, setData] = useState([])
     const [query, setQuery] = useState('')
-    const [btn,setBtn] = useState(false)
+    const [btn, setBtn] = useState(false)
 
-    const [error,setError] = useState(false)
+    const [error, setError] = useState(false)
+    const [checar, setChecar] = useState(false)
 
     const [selectQuery, setSelectQuery] = useState()
 
@@ -28,14 +29,14 @@ function Carreiras2() {
     // const [vagas, setVagas] = useState(false)
 
 
-function buttonVagas() {
-    setGif2(true)
-    setBtn(true)
-    setTimeout(() => {
-        setGif2(false)
-        window.location.href = 'https://auth.solides.jobs/sign-in'
-    }, 6000);
-}
+    function buttonVagas() {
+        setGif2(true)
+        setBtn(true)
+        setTimeout(() => {
+            setGif2(false)
+            window.location.href = 'https://auth.solides.jobs/sign-in'
+        }, 6000);
+    }
 
 
 
@@ -51,25 +52,31 @@ function buttonVagas() {
             }, [])
 
             .then(() => {
-                
 
-              
-                if(query && selectQuery && !btn) {
-                setGif(true)
-                setTimeout(() => {
-                    setGif(false)
-                    setActive(true)
-                }, 3000);
-            } if(!query || !selectQuery) {
-                setError(true)
-                setTimeout(() => {
-                    setError(false)  
-                }, 2000);
-                
-            }
+
+                const existingData = data.find((items) => items.vagas_nome === query && items.cidade === selectQuery)
+
+
+                if (query && selectQuery && !btn && existingData) {
+                    setGif(true)
+                    setTimeout(() => {
+                        setGif(false)
+                        setActive(true)
+                    }, 3000);
+                } if (!query || !selectQuery || !existingData) {
+                    setError(true)
+                    setTimeout(() => {
+                        setError(false)
+                    }, 2000);
+
+                }
+
+                if(!existingData) {
+                    setChecar(true)
+                }
+
+
             })
-
-        
 
     }
 
@@ -99,7 +106,7 @@ function buttonVagas() {
 
                         <div>
                             <select defaultValue={'default'} id='select' name='select' className="form-select select-carreiras2"
-                                aria-label="Default select example "  onChange={((e) => {
+                                aria-label="Default select example " onChange={((e) => {
                                     setSelectQuery(e.target.value)
                                     if (document.hasFocus('select')) {
                                         setActive(false)
@@ -112,16 +119,18 @@ function buttonVagas() {
                             </select>
                             {/* <button className="btn btn-primary btn-lg button-carreiras2" >Buscar</button> */}
                             <button type='submit' className="btn btn-primary btn-lg button-carreiras22"><span className='button-span-carreiras2'>BUSCAR</span> <GiBleedingEye className='icon-carreiras2'></GiBleedingEye></button>
-                                                    
+
                             {error && !btn &&  (
                                 <div className="alert alert-danger error-user-carreiras2" role="alert">
-                                <BiDizzy className="icon-user"></BiDizzy> Campos Vazios!!
-                              </div>
+                                    <BiDizzy className="icon-user"></BiDizzy> Um ERRO ocorreu!!
+                                </div>
 
                             )}
 
-                                                    
-                                                    
+                          
+
+
+
                         </div>
                         <section className='container-border-carreiras2'></section>
                     </div>
@@ -134,7 +143,7 @@ function buttonVagas() {
                         <section>
                             {active && (
                                 <ul class="list-group list-group-light">
-                                    {data.filter((vagas) => vagas.vagas_nome.toLowerCase().includes(query) && vagas.cidade.includes(selectQuery)).map((items) => {
+                                    {data.filter((vagas) => vagas.vagas_nome.includes(query) && vagas.cidade.includes(selectQuery)).map((items) => {
 
 
 
@@ -146,16 +155,14 @@ function buttonVagas() {
 
 
 
-
-
-                                        return  <li class="list-group-item list-carreiras2">
+                                        return <li key={items.id} class="list-group-item list-carreiras2">
                                             <section className='section-list-carreiras2'>
                                                 <section >
                                                     <h3>{items.vagas_nome}</h3>
                                                     <p>{items.cidade}</p>
-                                                    <p style={{bottom:"12px",position:'relative'}}>{items.descricao}</p>
-                                                    
-                                                        
+                                                    <p style={{ bottom: "12px", position: 'relative' }}>{items.descricao}</p>
+
+
                                                     {/* {descricao && (
 
 
@@ -172,11 +179,11 @@ function buttonVagas() {
                                                    
                                                     )} */}
 
-                                                    </section>
+                                                </section>
 
 
                                                 <section className='container-button-carreiras22'>
-                              
+
                                                     <button className="btn btn-primary btn-lg button-carreiras22" onClick={buttonVagas}>
 
 
