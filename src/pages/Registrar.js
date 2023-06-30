@@ -56,14 +56,16 @@ function Registrar() {
        
 
         const existingData = data.find(
-            (item) => item.email === email || item.nome === nome
+            (item) => item.email === email || item.cpf === cpf || item.telefone === telefone 
+            || item.endereco === endereco
           );
       
           if (existingData) {
+            setError(true);
             setTimeout(() => {
-              setError(true);
+              setError(false);
               window.location.reload()
-            }, 2000);
+            }, 3000);
             return;
           }
 
