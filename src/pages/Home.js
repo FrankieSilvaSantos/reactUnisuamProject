@@ -31,7 +31,8 @@ function Home() {
     const [tipo_suporte, setTipo_suporte] = useState()
     const [tipo_suporte2, setTipo_suporte2] = useState()
 
-    const [error, setError] = useState(false)
+    // const [error, setError] = useState(false)
+    const [success,setSuccess] = useState()
 
 
     function handleClick(e) {
@@ -60,8 +61,10 @@ function Home() {
                 setTipo_suporte2(tipo_suporte)
                     
                     if(nome && empresa && telefone && email && mensagem && checkbox && tipo_suporte) {
+                        setSuccess(true)
                         setTimeout(() => window.location.reload(),2000);
-                        console.log('Enviado com sucesso!!')
+                          
+                         console.log('Enviado com sucesso!!')
                     }    
             })
 
@@ -605,10 +608,10 @@ function Home() {
 
 
 
-                                        <button className="btn button-saibaMais2 btn-block mb-4">Enviar</button>
+                                        <button type="submit" className="btn button-saibaMais2 btn-block mb-4">Enviar</button>
 
 
-                                        {nome2 && empresa2 && telefone2 && email2 && mensagem2 && checkbox2 && tipo_suporte2 && (
+                                        {success && (
                                            
                                             < div className="alert alert-success success-home" role="alert">
                                         <BiWinkTongue className="icon-home"></BiWinkTongue> Informações enviadas com sucesso!!

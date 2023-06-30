@@ -58,47 +58,8 @@
       "mensagem": "empresas rodolfo as melhores",
       "checkbox": "checked",
       "tipo_suporte": "Comercial"
-    },
-    {
-      "nome": "Jack",
-      "empresa": "Jack SA",
-      "telefone": "5521123456789",
-      "email": "jacksa@gmail.com",
-      "mensagem": "jack SA é muito pika",
-      "checkbox": "checked",
-      "tipo_suporte": "suportecnico",
-      "id": 2
-    },
-    {
-      "nome": "joe",
-      "empresa": "joe star",
-      "telefone": "5521676577575",
-      "email": "joe@gmail.com",
-      "mensagem": "joe é mto brrabo mesmo",
-      "checkbox": "checked",
-      "tipo_suporte": "administrativoFinanceiro",
-      "id": 3
-    },
-    {
-      "nome": "Joshua Kipp",
-      "empresa": "Kipp Kipp",
-      "telefone": "5521123456789",
-      "email": "kipp@gmail.com",
-      "mensagem": "Trabalho muito pika c:",
-      "checkbox": "checked",
-      "tipo_suporte": "administrativoFinanceiro",
-      "id": 4
-    },
-    {
-      "nome": "Bhavi",
-      "empresa": "Trap Trap",
-      "telefone": "5521123456789",
-      "email": "bhavi@gmail.com",
-      "mensagem": "Projeto pika c:",
-      "checkbox": "checked",
-      "tipo_suporte": "suportecnico",
-      "id": 5
     }
+   
   ],
   "vagas": [
     {
