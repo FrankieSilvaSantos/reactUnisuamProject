@@ -19,6 +19,10 @@
     height: 30em;
 }
 
+.container-button-carreiras22 {
+    margin-right:1em;
+}
+
 
 .container-all-carreiras2 {
     display: grid;
@@ -33,6 +37,7 @@
 
 .span-titulo-carreiras2 {
     border-bottom: 2px solid rgb(233, 68, 211);
+   
 }
 
 .container-titul-carreiras2 {
@@ -88,6 +93,8 @@
     outline: none !important;
     box-shadow: none !important;
     font-size: 10px;
+    margin-top: 1em;
+   
     /* height: 45px; */
   
     height: 5em;
@@ -305,6 +312,12 @@ text-align: end;
 .p-descricao-carreiras2b {
     font-size: 60px;
    
+}
+
+.error-user-carreiras2 {
+
+    margin-top: 1em;
+    margin-right: 5em;
 }
 
 

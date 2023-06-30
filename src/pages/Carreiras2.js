@@ -6,6 +6,7 @@ import { GiBleedingEye } from "react-icons/gi";
 import { GiSharpSmile } from 'react-icons/gi'
 import { GiSkullCrossedBones } from 'react-icons/gi'
 import { useNavigate } from 'react-router-dom';
+import {BiDizzy} from 'react-icons/bi'
 
 function Carreiras2() {
 
@@ -13,18 +14,28 @@ function Carreiras2() {
 
     const [data, setData] = useState([])
     const [query, setQuery] = useState('')
+    const [btn,setBtn] = useState(false)
+
+    const [error,setError] = useState(false)
 
     const [selectQuery, setSelectQuery] = useState()
 
 
     const [active, setActive] = useState(false)
-    const [descricao, setDescricao] = useState(false)
+    // const [descricao, setDescricao] = useState(false)
     const [gif, setGif] = useState(false)
     const [gif2, setGif2] = useState(false)
     // const [vagas, setVagas] = useState(false)
 
 
-
+function buttonVagas() {
+    setGif2(true)
+    setBtn(true)
+    setTimeout(() => {
+        setGif2(false)
+        window.location.href = 'https://auth.solides.jobs/sign-in'
+    }, 6000);
+}
 
 
 
@@ -40,10 +51,25 @@ function Carreiras2() {
             }, [])
 
             .then(() => {
-                setActive(true)
+                
+
+              
+                if(query && selectQuery && !btn) {
+                setGif(true)
+                setTimeout(() => {
+                    setGif(false)
+                    setActive(true)
+                }, 3000);
+            } if(!query || !selectQuery) {
+                setError(true)
+                setTimeout(() => {
+                    setError(false)  
+                }, 2000);
+                
+            }
             })
 
-
+        
 
     }
 
@@ -73,7 +99,7 @@ function Carreiras2() {
 
                         <div>
                             <select defaultValue={'default'} id='select' name='select' className="form-select select-carreiras2"
-                                aria-label="Default select example " onChange={((e) => {
+                                aria-label="Default select example "  onChange={((e) => {
                                     setSelectQuery(e.target.value)
                                     if (document.hasFocus('select')) {
                                         setActive(false)
@@ -84,7 +110,18 @@ function Carreiras2() {
                                 <option className='option-carreiras2' value="São Paulo">São Paulo</option>
 
                             </select>
-                            <button className="btn btn-primary btn-lg button-carreiras2">Buscar</button>
+                            {/* <button className="btn btn-primary btn-lg button-carreiras2" >Buscar</button> */}
+                            <button type='submit' className="btn btn-primary btn-lg button-carreiras22"><span className='button-span-carreiras2'>BUSCAR</span> <GiBleedingEye className='icon-carreiras2'></GiBleedingEye></button>
+                                                    
+                            {error && !btn &&  (
+                                <div className="alert alert-danger error-user-carreiras2" role="alert">
+                                <BiDizzy className="icon-user"></BiDizzy> Campos Vazios!!
+                              </div>
+
+                            )}
+
+                                                    
+                                                    
                         </div>
                         <section className='container-border-carreiras2'></section>
                     </div>
@@ -97,7 +134,7 @@ function Carreiras2() {
                         <section>
                             {active && (
                                 <ul class="list-group list-group-light">
-                                    {data.filter((vagas,) => vagas.vagas_nome.toLowerCase().includes(query) && vagas.cidade.includes(selectQuery)).map((items) => {
+                                    {data.filter((vagas) => vagas.vagas_nome.toLowerCase().includes(query) && vagas.cidade.includes(selectQuery)).map((items) => {
 
 
 
@@ -109,52 +146,45 @@ function Carreiras2() {
 
 
 
-                                        return <li class="list-group-item list-carreiras2">
+
+
+                                        return  <li class="list-group-item list-carreiras2">
                                             <section className='section-list-carreiras2'>
                                                 <section >
                                                     <h3>{items.vagas_nome}</h3>
                                                     <p>{items.cidade}</p>
-                                                </section>
-                                                <section className='container-button-carreiras22'>
-                                                    <button className="btn btn-primary btn-lg button-carreiras22" onClick={() => {
-                                                        // setDescricao(true)
-
-                                                        setGif(true)
-                                                        setTimeout(() => {
-                                                            setDescricao(true)
-                                                            setGif(false)
-                                                        }, 2000);
+                                                    <p style={{bottom:"12px",position:'relative'}}>{items.descricao}</p>
+                                                    
+                                                        
+                                                    {/* {descricao && (
 
 
-                                                    }}
-                                                    ><span className='button-span-carreiras2'>Descrição</span> <GiBleedingEye className='icon-carreiras2'></GiBleedingEye></button>
-                                                    <button className="btn btn-primary btn-lg button-carreiras22" onClick={() => {
-                                                        setGif2(true)
-                                                        setTimeout(() => {
-                                                            setGif2(false)
-                                                            window.location.href = 'https://auth.solides.jobs/sign-in'
-                                                        }, 6000);
 
-
-                                                    }}>
-
-
-                                                        <span className='button-span-carreiras2'>Vagas {items.vagas_qtd}</span> <GiSharpSmile className='icon-carreiras2b'></GiSharpSmile></button>
-
-
-                                                    {descricao && (
                                                         <div className='container-descricao-carreiras2'>
                                                             <button onClick={() => {
                                                                 setDescricao(false)
                                                             }} className="btn btn-primary btn-lg button-carreiras22 button-descricao-carreiras2"
                                                             ><span className='button-span-carreiras2 button-span-descricao-carreiras2'>Fechar</span> <GiSkullCrossedBones className='icon-descricao-carreiras2'></GiSkullCrossedBones></button>
                                                             <p className='p-descricao-carreiras2'>{items.descricao}</p>
-
+                                                            
                                                         </div>
 
-                                                    )}
-
                                                    
+                                                    )} */}
+
+                                                    </section>
+
+
+                                                <section className='container-button-carreiras22'>
+                              
+                                                    <button className="btn btn-primary btn-lg button-carreiras22" onClick={buttonVagas}>
+
+
+                                                        <span className='button-span-carreiras2'>Vagas {items.vagas_qtd}</span> <GiSharpSmile className='icon-carreiras2b'></GiSharpSmile></button>
+
+
+
+
 
 
 
@@ -183,8 +213,8 @@ function Carreiras2() {
 
                 {gif2 && (
                     <div>
-                    <h1 className='gif2-title'>BOA VIAGEM</h1>
-                    <img className='rounded-circle gif-carreiras2b' src='/img/carreiras/vagas.gif'></img>
+                        <h1 className='gif2-title'>BOA VIAGEM</h1>
+                        <img className='rounded-circle gif-carreiras2b' src='/img/carreiras/vagas.gif'></img>
                     </div>
                 )}
 
